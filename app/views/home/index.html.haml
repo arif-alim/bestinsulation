@@ -1,0 +1,404 @@
+:css
+  .iframe body {
+    border:none;
+  }
+/ Video Section START
+.main-video-section
+  #video-area.video-area
+    -# #main-video-play.player{"data-property" => "{videoURL:'https://www.youtube.com/watch?v=Php6zdOJrGE', containment:'#video-area', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true}"}
+    #main-video-play.player{"data-property" => "{videoURL:'https://www.youtube.com/watch?v=Php6zdOJrGE', containment:'#video-area', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:0, opacity:1, quality:'high',}"}
+    .black-overlay-60
+      .main-video-content
+        .container
+          .white-color
+            %h3.bold
+              BEST INSULATION
+            %h5.bold
+              .italic.libre-baskerville.primary-color Toronto's leader in spray foam insulation
+            .mt-15
+              %h7
+                Best Insulation is the first choice of home builders, renovators and home owners in Toronto, and the GTA.
+            .mt-25
+              %a.primary-button.button-sm{:href => "#"} Contact Us
+/ Video Section END
+/ About Intro Block START
+.section-block
+  .container
+    .section-heading.center-holder
+      %h2.bold
+        Innovative solutions to
+        %span.italic.libre-baskerville.primary-color
+          move your business forward
+      .section-heading-line
+      %p
+        As an independent, boutique bank, trust and other financial services provider, The Equity Group designs custom made products and services to meet specific needs of high net worth individuals, families and institutional clients. The breadth of our multi-jurisdictional group of companies and affiliates provides us with the flexibility to devise and establish entities and relationships not only in The Bahamas but elsewhere if this in the best interest of a client.
+/ About Intro Block END
+.section-block{style:"padding-top: 0px"}
+  .container
+    .row
+      .col-md-5.col-sm-12.col-12
+        .section-heading.left-holder.wow.fadeIn.animated{"data-wow-delay" => ".1s", :style => "visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"}
+          %h3.bold
+            We Can Take
+            %span.italic.libre-baskerville.primary-color
+              Your Business
+            from Good to Great
+          .section-heading-line
+        .text-content.wow.fadeIn.animated{"data-wow-delay" => ".15s", :style => "visibility: visible; animation-delay: 0.15s; animation-name: fadeIn;"}
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
+          %p
+            Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt in culpa qui officia deserunt mollit anim id est laborum.
+        .mt-15.wow.fadeIn.animated{"data-wow-delay" => ".2s", :style => "visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"}
+          %a.button-sm.primary-button{:href => "about-us"}
+            About Equity Fiduciare DWC - LLC
+      .col-md-7.col-sm-12.col-12
+        .row.pl-30-md
+          .col-md-6.col-sm-6.col-12.wow.fadeIn.animated{"data-wow-delay" => ".15s", "data-wow-duration" => "1.5s", :style => "visibility: visible; animation-duration: 1.5s; animation-delay: 0.15s; animation-name: fadeIn;"}
+            .service-overlay
+              %img{:alt => "img", :src => "img/home/mission.jpg"}/
+              .service-overlay-box.center-holder
+                %h4
+                  %b
+                    Our Mission
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                %a{:href => "#"}
+                  Learn More
+          .col-md-6.col-sm-6.col-12.wow.fadeIn.animated{"data-wow-delay" => ".1s", "data-wow-duration" => "1.5s", :style => "visibility: visible; animation-duration: 1.5s; animation-delay: 0.1s; animation-name: fadeIn;"}
+            .service-overlay
+              %img{:alt => "img", :src => "img/home/vision.jpg"}/
+              .service-overlay-box.center-holder
+                %h4
+                  %b
+                    Our Vision
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                %a{:href => "#"}
+                  Learn More
+/ Features and Progress Bars Section START
+.section-block
+  .container
+    .row
+      .col-md-6.col-sm-12.col-12
+        .pr-45-md
+          %img.rounded-border.shadow-primary.full-width{:alt => "img", :src => "http://via.placeholder.com/510x564"}/
+      .col-md-6.col-sm-12.col-12
+        .section-heading.left-holder
+          %h3.bold
+            Our business is taking care of your business
+            %span.italic.libre-baskerville.primary-color From Good to Great.
+          .section-heading-line
+        .row.mt-20
+          .col-md-6.col-sm-12.col-xs-12
+            .feature-block-3.left-holder
+              %i.icon-shield-1
+              %h4 Investment Advisor
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          .col-md-6.col-sm-12.col-xs-12
+            .feature-block-3.left-holder
+              %i.icon-wallet2
+              %h4 Content Strategist
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          .col-md-6.col-sm-12.col-xs-12
+            .feature-block-3.left-holder
+              %i.icon-target2
+              %h4 Marketing Manager
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          .col-md-6.col-sm-12.col-xs-12
+            .feature-block-3.left-holder
+              %i.icon-compass2
+              %h4 Insurance Investigator
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+    .row.mt-60
+      .col-md-6.col-sm-6.col-12
+        .section-heading.left-holder.mt-20
+          %h3.bold Effective corporate performance.
+          .section-heading-line
+        .text-content
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+        .mt-15
+          %a.primary-button.button-sm{:href => "#"} Learn More
+      .col-md-5.col-sm-6.col-12.offset-md-1.mt-10
+        / Progress Bar Start
+        .progress-bar-title.clearfix
+          %h5 Budget Analyst
+          %h6 25%
+        .progress.progress-bar-sm
+          .progress-bar.progress-bar-primary.slideInLeft.wow.animated{:style => "width:25%"}
+        / Progress Bar End
+        / Progress Bar Start
+        .progress-bar-title.clearfix
+          %h5 Digital Marketing
+          %h6 50%
+        .progress.progress-bar-sm
+          .progress-bar.progress-bar-primary.slideInLeft.wow.animated{:style => "width:50%"}
+        / Progress Bar End
+        / Progress Bar Start
+        .progress-bar-title.clearfix
+          %h5 Social Media Managment
+          %h6 75%
+        .progress.progress-bar-sm
+          .progress-bar.progress-bar-primary.slideInLeft.wow.animated{:style => "width:75%"}
+        / Progress Bar End
+        / Progress Bar Start
+        .progress-bar-title.clearfix
+          %h5 Excellent Timing
+          %h6 90%
+        .progress.progress-bar-sm
+          .progress-bar.progress-bar-primary.slideInLeft.wow.animated{:style => "width:90%"}
+        / Progress Bar End
+/ Features and Progress Bars Section END
+/ Parallax Section START
+.section-block-parallax.jarallax.black-overlay-20{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('http://via.placeholder.com/1500x420');"}
+  .container
+    .large-heading.center-holder
+      %h2.white-color
+        Helping companies succeed
+        %br/
+        Creating real wealth.
+      .section-heading-line
+    .mt-25.center-holder
+      %a.white-button.button-md{:href => "#"} Become a Client
+/ Parallax Section END
+/ Services Block START
+.section-block
+  .container
+    .section-heading.center-holder
+      %h2.bold
+        Innovative solutions to
+        %span.italic.libre-baskerville.primary-color move your business forward
+      .section-heading-line
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        = succeed "ut" do
+          %br/
+    .row.mt-40
+      .col-md-3.col-sm-6.col-12
+        .service-block-2
+          %img{:alt => "img", :src => "http://via.placeholder.com/262x184"}/
+          .service-block-2-inner
+            %h4
+              %a{:href => "#"} Loans and finance
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt.
+      .col-md-3.col-sm-6.col-12
+        .service-block-2
+          %img{:alt => "img", :src => "http://via.placeholder.com/262x184"}/
+          .service-block-2-inner
+            %h4
+              %a{:href => "#"} Savings and Investments
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt.
+      .col-md-3.col-sm-6.col-12
+        .service-block-2
+          %img{:alt => "img", :src => "http://via.placeholder.com/262x184"}/
+          .service-block-2-inner
+            %h4
+              %a{:href => "#"} Mobile Payments
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt.
+      .col-md-3.col-sm-6.col-12
+        .service-block-2
+          %img{:alt => "img", :src => "http://via.placeholder.com/262x184"}/
+          .service-block-2-inner
+            %h4
+              %a{:href => "#"} Card services
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt.
+    .center-holder.mt-20
+      %a.primary-button-bordered.button-md{:href => "#"} View All Services
+/ Services Block END
+/ Video Box Section START
+.section-block-grey
+  .container
+    .row
+      .col-md-6.col-sm-6.col-12
+        .video-video-box.full-width
+          %img.rounded-border.shadow-primary.mb-10{:alt => "img", :src => "http://via.placeholder.com/555x370"}/
+          .video-video-box-overlay
+            .video-video-box-button-sm
+              %button.video-video-play-icon{"data-izimodal-open" => ".izimodal"}
+                %i.fa.fa-play
+        / Modal Start
+        .izimodal{"data-izimodal-fullscreen" => "true", "data-izimodal-width" => "800px"}
+          %iframe.full-width.shadow-primary{:height => "415", :src => "https://www.youtube.com/embed/nrJtHemSPW4"}
+        / Modal End
+      .col-md-6.col-sm-6.col-12
+        .pl-45-md
+          .section-heading.left-holder.mt-30
+            %h3.bold Strategic minds for your company's growth.
+            .section-heading-line
+          .text-content
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+          .mt-15
+            %a.primary-button.button-sm{:href => "#"} Learn More
+/ Video Box Section END
+/ Testmonials Section START
+.section-block-parallax.jarallax.black-overlay-70{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('http://via.placeholder.com/1500x400');"}
+  .container
+    #testmonials-parallax.owl-carousel.owl-theme
+      .testmonial-parallax.center-holder
+        .testmonial-parallax-text
+          %h6.libre-baskerville “
+          %p.italic.libre-baskerville I love those who can smile in trouble, who can gather strength from distress, and grow brave by reflection. 'Tis the business of little minds to shrink, but they whose heart is firm.
+          %h4 Isabelle Hart
+          %strong Business Broker
+      .testmonial-parallax.center-holder
+        .testmonial-parallax-text
+          %h6.libre-baskerville “
+          %p.italic.libre-baskerville Economic depression cannot be cured by legislative action or executive pronouncement. Economic wounds must be healed by the action of the cells of the economic body.
+          %h4 Jorge Trevino
+          %strong Damage Appraiser
+      .testmonial-parallax.center-holder
+        .testmonial-parallax-text
+          %h6.libre-baskerville “
+          %p.italic.libre-baskerville Business is all about the customer: what the customer wants and what they get. Generally, every customer wants a product or service that solves their problem.
+          %h4 Natalia Sims
+          %strong Project Manager
+/ Testmonials Section END
+/ Team Section START
+.section-block
+  .container
+    .section-heading.center-holder
+      %h2.bold
+        Proudly Serving
+        %span.italic.libre-baskerville.primary-color The Greater Toronto Area
+        .section-heading-line
+      %p
+        Our expert team never rests on our accomplishments. We didn’t get to where we are by being one of the crowd. Our team believes in innovation, and an expertly insulated home can drastically reduce your monthly energy bills and consumption, but also add the value of your home investment, and is also an excellent ethical choice that is great for the environment. Why wait? give us a call!
+      .mt-15
+        %a.primary-button.button-sm{:href => "#"} Call Us +1(647) 829-9797
+        %span{style:"padding-left:20px; padding-right:20px"}
+          OR
+        %a.primary-button.button-sm{:href => "#"} Contact Us
+        %a.primary-button.button-sm{:href => "#"} Request A Quote
+      .row.mt-30
+        %iframe{:height => "580px", :src => "https://snazzymaps.com/embed/90536", :style => "border:none;", :width => "100%"}
+
+.section-block.pt-0
+  .container
+    .section-heading.center-holder
+      %h2.bold
+        Innovative solutions to
+        %span.italic.libre-baskerville.primary-color move your business forward
+      .section-heading-line
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+    .row.mt-40
+      .col-md-4.col-sm-4.col-12
+        .team-box
+          .team-box-img
+            %img{:alt => "img", :src => "http://via.placeholder.com/338x372"}/
+          %h4
+            %a{:href => "#"} Thomas Cooper
+          %span HR Specialist
+          %p.italic.libre-baskerville Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          %ul.team-box-social
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-facebook-f
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-twitter
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-skype
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-google
+      .col-md-4.col-sm-4.col-12
+        .team-box
+          .team-box-img
+            %img{:alt => "img", :src => "http://via.placeholder.com/338x372"}/
+          %h4
+            %a{:href => "#"} Sofia Harris
+          %span Benefits Officer
+          %p.italic.libre-baskerville Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          %ul.team-box-social
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-facebook-f
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-twitter
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-skype
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-google
+      .col-md-4.col-sm-4.col-12
+        .team-box
+          .team-box-img
+            %img{:alt => "img", :src => "http://via.placeholder.com/338x372"}/
+          %h4
+            %a{:href => "#"} Jameson Castillo
+          %span Insurance Agent
+          %p.italic.libre-baskerville Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          %ul.team-box-social
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-facebook-f
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-twitter
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-skype
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-google
+/ Team Section END
+/ Callback Section START
+.section-block-grey
+  .container
+    .row
+      .col-md-7.col-sm-7.col-12
+        .section-heading.left-holder
+          %h4.bold Delivering results that endure. Strategy and technology consultants to the world.
+          .section-heading-line
+        .text-content
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .mt-20
+          %a.primary-button-bordered.button-md{:href => "#"} Contact Us
+      .col-md-4.col-sm-4.col-12.offset-md-1
+        / Callback Block Start
+        .contact-form-md.white-background.shadow-light.center-holder
+          %h5 Request a Callback
+          / Form Start
+          %form.mt-30{:action => "#", :method => "get"}
+            %input{:name => "name", :placeholder => "Your Name", :type => "text"}/
+            %input{:name => "email", :placeholder => "Your Email", :type => "email"}/
+            %input{:name => "phone", :placeholder => "Your Phone Number", :type => "text"}/
+            %button.primary-button.button-sm.full-width{:type => "submit"} Send Message
+          / Form End
+        / Callback Block End
+/ Callback Section END
+/ Clients Carousel START
+.section-block.section-sm
+  .container
+    #clients.owl-carousel.owl-theme.clients
+      .item
+        %img{:alt => "img", :src => "http://via.placeholder.com/125x35"}/
+      .item
+        %img{:alt => "img", :src => "http://via.placeholder.com/125x35"}/
+      .item
+        %img{:alt => "img", :src => "http://via.placeholder.com/125x35"}/
+      .item
+        %img{:alt => "img", :src => "http://via.placeholder.com/125x35"}/
+      .item
+        %img{:alt => "img", :src => "http://via.placeholder.com/125x35"}/
+      .item
+        %img{:alt => "img", :src => "http://via.placeholder.com/125x35"}/
+/ Clients Carousel END
