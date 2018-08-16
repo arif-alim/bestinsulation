@@ -1,54 +1,173 @@
+:css
+  .grid-gallery-3col .gallery-item {
+    width: calc(100% / 3 - 6px);
+    margin: 1px;
 
-%footer.footer-style-3.background-center.black-overlay-70{:style => "background-image: url(img/footer/background-insulation.jpg);"}
+    float:right;
+  }
+  h3 a {
+    color: white;
+  }
+  h3 a:hover {
+    color: #DFC746;
+  }
+  .col-md-3.col-sm-6.col-12 .short {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .col-md-2.col-sm-6.col-12 .short {
+    width: 100%;
+    margin-left: 6px;
+  }
+  .blog-list .heading {
+    font-size: 15px;
+    font-weight: 600;
+    color: #DFC746;
+    margin-bottom: 0px;
+    padding: 6px 0 6px 0;
+  }
+  .blog-list .body {
+    font-weight: 500;
+    color: whitesmoke;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .footer-style-3-bar .btm-footer {
+    font-weight: 500;
+  }
+%footer.footer-style-3.background-center.black-overlay-50{:style => "background-image: url(img/footer/footer-background.jpg);"}
   .container
     .row
       / Column 1 Start
-      .col-md-5.col-sm-6.col-12
-        %img{:alt => "Best Insulation Footer White Logo", :src => "img/logos/logo-footer.svg", style:"width: 250px"}/
+      .col-md-3.col-sm-6.col-12
+        %img{:alt => "Best Insulation Footer White Logo", :src => "img/logos/logo-footer.svg", style:"width: 250px;"}/
         .mt-20
           %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            Best Insulation offers free consultations to help clients decide which insulation product is the best solution. We are capable of servicing the smallest local contracts to the largest residential jobs throughout the Greater Toronto Area. Best Insulation is a family run company that prides itself on high knowledge on its products and craftsmanship. A owner is always on site during installation and we are available to you 24/7.
           %a.small-text.white-color{:href => "#"} More About us
       / Column 1 End
       / Column 2 Start
-      .col-md-3.col-sm-6.col-12.offset-md-1
-        %h3 Latest News
-        %ul.footer-style-3-latest-news
-          %li
-            %span 30.03.2018
-            %a{:href => "#"} Save Time &amp; Money In Your Business
-          %li
-            %span 29.03.2018
-            %a{:href => "#"} Excellent template with a very ...
-          %li
-            %span 28.03.2018
-            %a{:href => "#"} Kudos design and code team!
+      .col-md-4.col-sm-6.col-12
+        %h3
+          %a{:href => "/"}
+            View All Photos
+        .grid-gallery-3col.gallery-style-1.clearfix
+          .gallery-item
+            %img{:alt => "img", :src => "img/footer/gallery/photo-1.jpg", :title => "image"}/
+            .gallery-overlay
+              .gallery-content
+                .gallery-content-inner
+                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-1.jpg"}
+                    %i.ti-zoom-in
+          .gallery-item
+            %img{:alt => "img", :src => "img/footer/gallery/photo-2.jpg", :title => "image"}/
+            .gallery-overlay
+              .gallery-content
+                .gallery-content-inner
+                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-2.jpg"}
+                    %i.ti-zoom-in
+                  %a{:href => "#"}
+                    %i.ti-gallery
+          .gallery-item
+            %img{:alt => "img", :src => "img/footer/gallery/photo-3.jpg", :title => "image"}/
+            .gallery-overlay
+              .gallery-content
+                .gallery-content-inner
+                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-3.jpg"}
+                    %i.ti-zoom-in
+                  %a{:href => "#"}
+                    %i.ti-gallery
+          .gallery-item
+            %img{:alt => "img", :src => "img/footer/gallery/photo-4.jpg", :title => "image"}/
+            .gallery-overlay
+              .gallery-content
+                .gallery-content-inner
+                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-4.jpg"}
+                    %i.ti-zoom-in
+          .gallery-item
+            %img{:alt => "img", :src => "img/footer/gallery/photo-5.jpg", :title => "image"}/
+            .gallery-overlay
+              .gallery-content
+                .gallery-content-inner
+                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-5.jpg"}
+                    %i.ti-zoom-in
+                  %a{:href => "#"}
+                    %i.ti-gallery
+          .gallery-item
+            %img{:alt => "img", :src => "img/footer/gallery/photo-6.jpg", :title => "image"}/
+            .gallery-overlay
+              .gallery-content
+                .gallery-content-inner
+                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-6.jpg"}
+                    %i.ti-zoom-in
+                  %a{:href => "#"}
+                    %i.ti-gallery
+          .gallery-item
+            %img{:alt => "img", :src => "img/footer/gallery/photo-7.jpg", :title => "image"}/
+            .gallery-overlay
+              .gallery-content
+                .gallery-content-inner
+                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-7.jpg"}
+                    %i.ti-zoom-in
+          .gallery-item
+            %img{:alt => "img", :src => "img/footer/gallery/photo-8.jpg", :title => "image"}/
+            .gallery-overlay
+              .gallery-content
+                .gallery-content-inner
+                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-8.jpg"}
+                    %i.ti-zoom-in
+                  %a{:href => "#"}
+                    %i.ti-gallery
+          .gallery-item
+            %img{:alt => "img", :src => "img/footer/gallery/photo-9.jpg", :title => "image"}/
+            .gallery-overlay
+              .gallery-content
+                .gallery-content-inner
+                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-9.jpg"}
+                    %i.ti-zoom-in
+                  %a{:href => "#"}
+                    %i.ti-gallery
+
       / Column 2 End
       / Column 3 Start
       .col-md-3.col-sm-6.col-12
-        %h3 Contact Info
-        %ul.footer-style-3-contact-info
-          %li
-            %i.fa.fa-phone
-            %span +11 (0) 123 456 7890
-          %li
-            %i.fa.fa-envelope-open
-            %span specthemes@gmail.com
-          %li
-            %i.fa.fa-map-marker-alt
-            %span New York, NY Sheram 113
-          %li
-            %i.fa.fa-phone-square
-            %span +11 (0) 123 456 7890
+        .short
+          %h3 Recent Post
+          .blog-list
+            %img{:alt => "img", :src => "http://via.placeholder.com/945x480"}/
+            %p.heading
+              Reviews on Spray Foam Insulation
+            %p.body
+              Reviews On Spray Foam Insulation: Our Best Articles of 2017The end of the year brings the inevitable reviews and “Best Of” lists in all kinds of categories...
+            .mt-20
+              %a.button-xs.primary-button{:href => "#"} Read More
+
+      / Column 3 End
+      / Column 3 Start
+      .col-md-2.col-sm-6.col-12
+        .short
+          %h3 Contact Info
+          %ul.footer-style-3-contact-info
+            %li
+              %i.fa.fa-phone
+              %span +11 (0) 123 456 7890
+            %li
+              %i.fa.fa-envelope-open
+              %span specthemes@gmail.com
+            %li
+              %i.fa.fa-map-marker-alt
+              %span New York, NY Sheram 113
+            %li
+              %i.fa.fa-phone-square
+              %span +11 (0) 123 456 7890
       / Column 3 End
   .footer-style-3-bar
     .container
       .row
-        .col-md-6.col-sm-6.col-12.mt-10
-          %h5 SpecThemes © 2018. All Rights Reserved.
-        .col-md-6.col-sm-6.col-12.right-holder.center-holder-xs
+        .col-md-4.col-sm-6.col-12.mt-10
+          %h5.btm-footer
+            SpecThemes © 2018. All Rights Reserved.
+        .col-md-4.col-sm-6.col-12.center-holder.center-holder-xs
           %ul.footer-style-3-social-links
             %li
               %a{:href => "#"}
@@ -65,6 +184,11 @@
             %li
               %a{:href => "#"}
                 %i.fab.fa-skype
+        .col-md-4.col-sm-6.col-12.mt-10.right-holder.center-holder-xs
+          %h5.btm-footer
+            Website Designed by
+            %a{:href => "/"}
+              %psan Arif Alim
 
 
 / Footer END
