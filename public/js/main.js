@@ -1,8 +1,7 @@
 /*
-    Project Name : Webmaker
-    Author Company : SpecThemes
-    Project Date: 5 June, 2017
-    Template Developer: vsafaryan50@gmail.com
+  Project Name : Best Insulation
+  Author Company : Arif Alim
+  Project Date: 4 August, 2018
 */
 
 
@@ -45,7 +44,7 @@ $(document).ready(function() {
 
 /*------------------------------------
     1. Owl Carousel
---------------------------------------*/  
+--------------------------------------*/
 
 
 /*---------------------
@@ -55,7 +54,7 @@ Testmonials carousel
     loop: false,
     responsiveClass: true,
     nav:true,
-    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],       
+    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
     responsive: {
       0: {
         items: 1,
@@ -66,7 +65,7 @@ Testmonials carousel
       600: {
         items: 1,
         nav: false,
-        dots: true,        
+        dots: true,
         margin: 15,
       },
       1000: {
@@ -75,7 +74,7 @@ Testmonials carousel
         margin: 40,
       }
     }
-  })  
+  })
 
 
 
@@ -86,12 +85,12 @@ Blog Grid
     loop: false,
     responsiveClass: true,
     nav:false,
-    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],       
+    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
     autoplay: true,
     smartSpeed: 950,
-    autoplayTimeout: 1800,  
+    autoplayTimeout: 1800,
     responsiveClass: true,
-    autoplayHoverPause:false,    
+    autoplayHoverPause:false,
     responsive: {
       0: {
         items: 1,
@@ -102,7 +101,7 @@ Blog Grid
       600: {
         items: 2,
         nav: false,
-        dots: true,        
+        dots: true,
         margin: 0,
       },
       1000: {
@@ -111,7 +110,7 @@ Blog Grid
         margin: 0,
       }
     }
-  })   
+  })
 
 
 
@@ -121,7 +120,7 @@ Team Carousel
   $('#team-block').owlCarousel({
     dots: true,
     loop: false,
-    nav: false,    
+    nav: false,
     responsiveClass: true,
     smartSpeed: 950,
     responsive: {
@@ -148,7 +147,7 @@ Testmonials Carousel 1
 -----------------------*/
   $('#testmonials-modern').owlCarousel({
     loop: false,
-    nav: false,    
+    nav: false,
     responsiveClass: true,
     responsive: {
       0: {
@@ -175,8 +174,8 @@ Testmonials Carousel 2
   $('#testmonials-parallax').owlCarousel({
     dots: false,
     loop: false,
-    nav: false,   
-    smartSpeed: 950, 
+    nav: false,
+    smartSpeed: 950,
     responsiveClass: true,
     responsive: {
       0: {
@@ -207,7 +206,7 @@ Clients carousel
     dots: false,
     autoplay: true,
     smartSpeed: 950,
-    autoplayTimeout: 2000,  
+    autoplayTimeout: 2000,
     responsiveClass: true,
     autoplayHoverPause:false,
     responsive: {
@@ -237,7 +236,7 @@ Clients carousel
     dots: false,
     autoplay: true,
     smartSpeed: 500,
-    autoplayTimeout: 5000,  
+    autoplayTimeout: 5000,
     responsiveClass: true,
     autoplayHoverPause:false,
     responsive: {
@@ -254,7 +253,7 @@ Clients carousel
         margin: 0,
       }
     }
-  })  
+  })
 
 
 
@@ -264,12 +263,12 @@ Single Item Autoplay Carousel
   $('.carousel-single-item-autoplay').owlCarousel({
     dots: false,
     loop: true,
-    nav: false,   
+    nav: false,
     responsiveClass: true,
     autoplay: true,
     smartSpeed: 950,
-    autoplayTimeout: 6000,  
-    autoplayHoverPause: true,   
+    autoplayTimeout: 6000,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
@@ -292,8 +291,8 @@ Single Item Carousel
   $('.carousel-single-item').owlCarousel({
     dots: false,
     loop: false,
-    nav: false,   
-    smartSpeed: 950, 
+    nav: false,
+    smartSpeed: 950,
     responsiveClass: true,
     responsive: {
       0: {
@@ -309,7 +308,7 @@ Single Item Carousel
         margin: 0,
       }
     }
-  })  
+  })
 
 
 /*---------------------
@@ -318,13 +317,13 @@ Gallery Carousel
   $('.gallery-carousel').owlCarousel({
     center:true,
     stagePadding: 20,
-    smartSpeed: 1100,   
+    smartSpeed: 1100,
     URLhashListener:true,
     startPosition: 'URLHash',
     autoplay:true,
     autoplayTimeout: 3500,
     loop: true,
-    nav: false,    
+    nav: false,
     responsiveClass: true,
     dots: false,
     responsive: {
@@ -341,7 +340,7 @@ Gallery Carousel
         margin: 30,
       }
     }
-  })    
+  })
 
 
 
@@ -350,7 +349,7 @@ Gallery Carousel
 Customiable Carousel
 -----------------------*/
   var owl_carousel = $("div.customizable-carousel");
-  if(owl_carousel.length > 0) {  
+  if(owl_carousel.length > 0) {
      owl_carousel.each(function () {
       var $this = $(this),
           $items = ($this.data('items')) ? $this.data('items') : 1,
@@ -361,8 +360,8 @@ Customiable Carousel
           $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 3500,
           $smartspeed = ($this.attr('data-smartspeed')) ? $this.data('smartspeed') : 950,
           $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
-          $space = ($this.attr('data-space')) ? $this.data('space') : 15;    
-     
+          $space = ($this.attr('data-space')) ? $this.data('space') : 15;
+
           $(this).owlCarousel({
               loop: $loop,
               items: $items,
@@ -380,9 +379,9 @@ Customiable Carousel
               nav: $navarrows,
               navText:["<i class='ti-angle-left'></i>","<i class='ti-angle-right'></i>"],
               autoplay: $autoplay,
-              autoplayHoverPause: true   
-          }); 
-     }); 
+              autoplayHoverPause: true
+          });
+     });
   }
 
 
@@ -390,7 +389,7 @@ Customiable Carousel
 
 /*------------------------------------
     2. CountUp
---------------------------------------*/  
+--------------------------------------*/
   $('.countup').counterUp({
       delay: 25,
       time: 2500
@@ -400,13 +399,13 @@ Customiable Carousel
 
 /*------------------------------------
     3. Slider
---------------------------------------*/ 
-  
+--------------------------------------*/
+
   /*---------------------
   Main Slider
   -----------------------*/
-  if($(".swiper-main-slider").length !== 0) { 
-      //Slider Animated Caption 
+  if($(".swiper-main-slider").length !== 0) {
+      //Slider Animated Caption
       var swiper = new Swiper('.swiper-container', {
           navigation: {
             nextEl: '.swiper-button-next',
@@ -415,7 +414,7 @@ Customiable Carousel
           pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
-          },        
+          },
           pagination: '.swiper-pagination',
           paginationClickable: true,
           nextButton: '.swiper-button-next',
@@ -442,8 +441,8 @@ Customiable Carousel
   /*---------------------
   Main Slider Fade Effect
   -----------------------*/
-  if($(".swiper-main-slider-fade").length !== 0) { 
-      //Slider Animated Caption 
+  if($(".swiper-main-slider-fade").length !== 0) {
+      //Slider Animated Caption
       var swiper = new Swiper('.swiper-container', {
           effect: 'fade',
           navigation: {
@@ -453,7 +452,7 @@ Customiable Carousel
           pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
-          },        
+          },
           pagination: '.swiper-pagination',
           paginationClickable: true,
           nextButton: '.swiper-button-next',
@@ -475,12 +474,12 @@ Customiable Carousel
               });
           }
       });
-  }  
+  }
 
   /*---------------------
   Parallax Slider
   -----------------------*/
-  if($("#swiper-parallax").length !== 0) { 
+  if($("#swiper-parallax").length !== 0) {
     var swiper = new Swiper('.swiper-container', {
       parallax: true,
       navigation: {
@@ -490,7 +489,7 @@ Customiable Carousel
       pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,
-      },        
+      },
       pagination: '.swiper-pagination',
       paginationClickable: true,
       nextButton: '.swiper-button-next',
@@ -572,11 +571,11 @@ Customiable Carousel
     }); /*ready*/
   }
 
-    
+
 
 /*------------------------------------
     4. Navbar
---------------------------------------*/    
+--------------------------------------*/
 
   /*---------------------
   Fixed Nav
@@ -589,35 +588,35 @@ Customiable Carousel
   -----------------------*/
   if ($("#nav-transparent").length !== 0) {
     if ($(window).width() > 991){
-      $("#nav-transparent #main_logo").css("display" , "none"); 
+      $("#nav-transparent #main_logo").css("display" , "none");
     }
     else{
-      $("#nav-transparent #light_logo").css("display" , "none"); 
+      $("#nav-transparent #light_logo").css("display" , "none");
     }
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       if ($(window).width() > 991){
         if (scroll > 30) {
-          $(".navigation-fixed-wrapper").addClass("nav-white-bg");  
-          $("#nav-transparent #main_logo").css("display" , "inline-block"); 
-          $("#nav-transparent #light_logo").css("display" , "none"); 
+          $(".navigation-fixed-wrapper").addClass("nav-white-bg");
+          $("#nav-transparent #main_logo").css("display" , "inline-block");
+          $("#nav-transparent #light_logo").css("display" , "none");
         }
         else{
-          $(".navigation-fixed-wrapper").removeClass("nav-white-bg"); 
+          $(".navigation-fixed-wrapper").removeClass("nav-white-bg");
           $("#nav-transparent #light_logo").css("display" , "inline-block");
-          $("#nav-transparent #main_logo").css("display" , "none"); 
+          $("#nav-transparent #main_logo").css("display" , "none");
         }
       }
-    })  
+    })
   }
 
   /*---------------------
   Nav Slide Effect
-  -----------------------*/  
+  -----------------------*/
   $("#navigation2").navigation({
     effect: "slide"
   });
-  
+
   /*---------------------
   Nav Zoom Effect
   -----------------------*/
@@ -625,10 +624,10 @@ Customiable Carousel
     animationOnShow: "zoom-in",
     animationOnHide: "zoom-out"
   });
-  
+
   /*---------------------
   Overlay Nav
-  -----------------------*/    
+  -----------------------*/
   $("#navigation4").navigation({
     overlayColor: "rgba(0,0,0,0.6)"
   });
@@ -639,10 +638,10 @@ Customiable Carousel
   $("#navigation4").fixed({
     offset: 20
   });
-  
+
   /*---------------------
   Hidden Nav
-  -----------------------*/  
+  -----------------------*/
   $("#navigation5").navigation({
     hidden: true
   });
@@ -656,42 +655,42 @@ Customiable Carousel
     else{
       $("#navigation5 #main_logo").clone().appendTo(".small-size-header-logo");
       $("#main_logo").css("display", "none");
-      $("#navigation-push").find($(".nav-menus-wrapper").removeClass("nav-menus-wrapper-open"));  
-    } 
+      $("#navigation-push").find($(".nav-menus-wrapper").removeClass("nav-menus-wrapper-open"));
+    }
   }
 
   /*---------------------
   Button Nav
   -----------------------*/
-  $(".btn-show").on('click', function(){ 
+  $(".btn-show").on('click', function(){
     $("#navigation5").data("navigation").toggleOffcanvas();
   });
-  
+
   $("#navigation6").navigation({
     offCanvasSide: "right"
   });
 
   /*---------------------
   Simple Nav
-  -----------------------*/  
+  -----------------------*/
   $("#navigation7").navigation();
 
 
 /*------------------------------------
     5. Youtube Video Section
---------------------------------------*/ 
+--------------------------------------*/
   if($(".video-section").length !== 0) {
     $('.player').mb_YTPlayer();
   }
 
   if($(".main-video-section").length !== 0) {
     $('#main-video-play').mb_YTPlayer();
-  } 
+  }
 
 
 /*------------------------------------
     6. Video Modal
---------------------------------------*/ 
+--------------------------------------*/
   $('.modal').on('hidden.bs.modal', function() {
     var $this = $(this).find('iframe'),
       tempSrc = $this.attr('src');
@@ -702,7 +701,7 @@ Customiable Carousel
 
 /*------------------------------------
     7. Preloader
---------------------------------------*/ 
+--------------------------------------*/
   $('#preloader').fadeOut('normall', function() {
       $(this).remove();
   });
@@ -710,11 +709,11 @@ Customiable Carousel
 
 /*------------------------------------
     8. Scroll To Top
---------------------------------------*/ 
+--------------------------------------*/
   $(window).scroll(function(){
       if($(this).scrollTop() > 500) {
           $(".scroll-to-top").fadeIn(400);
-          
+
       } else {
           $(".scroll-to-top").fadeOut(400);
       }
@@ -729,7 +728,7 @@ Customiable Carousel
 
 /*------------------------------------
     9. Pie Chart
---------------------------------------*/  
+--------------------------------------*/
   if ($('.chart').length > 0) {
       var $pieChart = $('.chart');
       $pieChart.each(function () {
@@ -760,11 +759,11 @@ Customiable Carousel
           });
       });
   };
-      
+
 
 /*------------------------------------
     10. WOW
---------------------------------------*/ 
+--------------------------------------*/
   new WOW().init();
 
 });
@@ -772,7 +771,7 @@ Customiable Carousel
 
 /*------------------------------------
     11. Tabs
---------------------------------------*/ 
+--------------------------------------*/
   $('.tabs_animate').tabslet({
     mouseevent: 'click',
     attribute: 'href',
@@ -782,7 +781,7 @@ Customiable Carousel
 
 /*------------------------------------
     12. Input Number, Shopping Cart
---------------------------------------*/ 
+--------------------------------------*/
   /*---------------------
   Input Number
   -----------------------*/
@@ -832,7 +831,7 @@ Customiable Carousel
 
 /*------------------------------------
     13. Modal
---------------------------------------*/ 
+--------------------------------------*/
   $(".izimodal").iziModal({
       width: 800,
       top: null,
@@ -891,15 +890,15 @@ Customiable Carousel
 
 
 /*------------------------------------
-    14. Justified Gallery 
---------------------------------------*/ 
+    14. Justified Gallery
+--------------------------------------*/
   if ($('.justified_gallery').length > 0) {
       $(".justified_gallery").justifiedGallery();
       var $justifiedgallery = $('.justified_gallery');
       $justifiedgallery.each(function () {
           var $element = $(this),
           rowHeight = $element.attr('data-rowHeight') || "200",
-          margins = $element.attr('data-margins') || "10"             
+          margins = $element.attr('data-margins') || "10"
           $element.appear(function () {
               $element.justifiedGallery({
                   rowHeight: Number(rowHeight),
@@ -913,7 +912,7 @@ Customiable Carousel
 
 /*------------------------------------
     15. Magnific Popup
---------------------------------------*/ 
+--------------------------------------*/
   $('.image-popup-gallery').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
@@ -928,7 +927,7 @@ Customiable Carousel
       enabled: true,
       navigateByImgClick: true,
       preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-    }  
+    }
   });
 
 
@@ -945,7 +944,7 @@ Customiable Carousel
 
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
     closeOnContentClick: true,
-    closeBtnInside: false,    
+    closeBtnInside: false,
     disableOn: 700,
     type: 'iframe',
     mainClass: 'mfp-fade',
@@ -957,7 +956,7 @@ Customiable Carousel
 
 /*------------------------------------
     16. CountDowns
---------------------------------------*/ 
+--------------------------------------*/
     $('.countdown').countdown($('.countdown').attr("data-enddate")).on('update.countdown', function (event) {
         $(this).html(event.strftime('' + '<div class="row"><div class="col-md-3 col-sm-6 col-3"><div class="countdown-box">%-D<h6>Day%!d</h6></div></div>' + '<div class="col-md-3 col-sm-6 col-3"><div class="countdown-box">%H<h6>Hours</h6></div></div>' + '<div class="col-md-3 col-sm-6 col-3"><div class="countdown-box">%M<h6>Minutes</h6></div></div>' + '<div class="col-md-3 col-sm-6 col-3"><div class="countdown-box">%S<h6>Seconds</h6></div></div></div>'));
     });
@@ -966,7 +965,7 @@ Customiable Carousel
 
 /*------------------------------------
     17. Fullscreen
---------------------------------------*/ 
+--------------------------------------*/
 function fullScreenHeight() {
   var element = $(".full-height");
   var $minheight = $(window).height();
@@ -986,7 +985,7 @@ if ($(".full-height").length > 0) {
 
 /*------------------------------------
     18. Shop Cart
---------------------------------------*/ 
+--------------------------------------*/
   $('.close-box').on("click", function () {
     $(this).parentsUntil('#1').slideToggle();
     return false;
@@ -996,7 +995,7 @@ if ($(".full-height").length > 0) {
 
 /*------------------------------------
     19. Ripple Effect
---------------------------------------*/  
+--------------------------------------*/
   try {
     $('.erreor-box-404').ripples({
       resolution: 512,

@@ -1,0 +1,43 @@
+:css
+  .clients {
+    margin-right: 0px;
+  }
+  #clients .owl-carousel .owl-item {
+    margin-right: 0px;
+  }
+/ Clients Carousel START
+.section-block.section-xs.pt-0
+  .container
+    #clients.owl-carousel.owl-theme
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/insulthane.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/enbridge.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/homestars2017.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/homestars2018.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/lowes.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/proud-canadian.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/green-guard.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/bbb.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/foam-masters.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/3m.jpg"}/
+      .item
+        %img{:alt => "img", :src => "img/footer/logos/baeumler.jpg"}/
+/ Clients Carousel END
+:javascript
+  var Owl.Defaults = {
+    center         : true,
+    loop           : true,
+    lazyLoad       : true,
+    margin         : 0,
+    responsiveClass: true,
+    autoWidth: true,
+    }
