@@ -1,8 +1,11 @@
 :css
+  .footer-style-3 h3 {
+    margin-bottom: 18px;
+    font-size: 15px;
+  }
   .grid-gallery-3col .gallery-item {
     width: calc(100% / 3 - 6px);
     margin: 1px;
-
     float:right;
   }
   h3 a {
@@ -11,31 +14,71 @@
   h3 a:hover {
     color: #DFC746;
   }
+  .col-md-4.col-sm-6.col-12 .short {
+    width: 99%;
+  }
   .col-md-3.col-sm-6.col-12 .short {
-    width: 100%;
-    margin-left: 10px;
+    width: 99%;
+    margin-left: 15px;
   }
   .col-md-2.col-sm-6.col-12 .short {
     width: 100%;
-    margin-left: 6px;
+    /* margin-left: 6px; */
   }
-  .blog-list .heading {
-    font-size: 15px;
+  ul li span a{
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+  ul li span a:hover{
+    font-size: 13px;
     font-weight: 600;
     color: #DFC746;
     margin-bottom: 0px;
-    padding: 6px 0 6px 0;
   }
-  .blog-list .body {
+  .short .heading {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .short .heading .article{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+    padding: 10px 0 10px 0;
+  }
+  .short .heading a {
+    color: #fff;
+  }
+  .short .heading a:hover {
+    color: #DFC746;
+  }
+  .short .body ul li span {
+    color:white;
+  }
+  .short .body {
     font-weight: 500;
-    color: whitesmoke;
+    font-size: 13px;
+    color: #fff;
     padding-top: 0px;
     margin-top: 0px;
+  }
+  .short .body a {
+    color: white;
+  }
+  .short .body a:hover {
+    color: #DFC746;
   }
   .footer-style-3-bar .btm-footer {
     font-weight: 500;
   }
-%footer.footer-style-3.background-center.black-overlay-50{:style => "background-image: url(img/footer/footer-background.jpg);"}
+  .footer-style-3-bar .btm-footer a {
+    font-weight: 500;
+  }
+%footer.footer-style-3.background-center.black-overlay-60{:style => "background-image: url(img/footer/footer-background.jpg);"}
   .container
     .row
       / Column 1 Start
@@ -47,134 +90,169 @@
           %a.small-text.white-color{:href => "#"} More About us
       / Column 1 End
       / Column 2 Start
-      .col-md-4.col-sm-6.col-12
-        %h3
-          %a{:href => "/"}
-            View All Photos
-        .grid-gallery-3col.gallery-style-1.clearfix
-          .gallery-item
-            %img{:alt => "img", :src => "img/footer/gallery/photo-1.jpg", :title => "image"}/
-            .gallery-overlay
-              .gallery-content
-                .gallery-content-inner
-                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-1.jpg"}
-                    %i.ti-zoom-in
-          .gallery-item
-            %img{:alt => "img", :src => "img/footer/gallery/photo-2.jpg", :title => "image"}/
-            .gallery-overlay
-              .gallery-content
-                .gallery-content-inner
-                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-2.jpg"}
-                    %i.ti-zoom-in
-                  %a{:href => "#"}
-                    %i.ti-gallery
-          .gallery-item
-            %img{:alt => "img", :src => "img/footer/gallery/photo-3.jpg", :title => "image"}/
-            .gallery-overlay
-              .gallery-content
-                .gallery-content-inner
-                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-3.jpg"}
-                    %i.ti-zoom-in
-                  %a{:href => "#"}
-                    %i.ti-gallery
-          .gallery-item
-            %img{:alt => "img", :src => "img/footer/gallery/photo-4.jpg", :title => "image"}/
-            .gallery-overlay
-              .gallery-content
-                .gallery-content-inner
-                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-4.jpg"}
-                    %i.ti-zoom-in
-          .gallery-item
-            %img{:alt => "img", :src => "img/footer/gallery/photo-5.jpg", :title => "image"}/
-            .gallery-overlay
-              .gallery-content
-                .gallery-content-inner
-                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-5.jpg"}
-                    %i.ti-zoom-in
-                  %a{:href => "#"}
-                    %i.ti-gallery
-          .gallery-item
-            %img{:alt => "img", :src => "img/footer/gallery/photo-6.jpg", :title => "image"}/
-            .gallery-overlay
-              .gallery-content
-                .gallery-content-inner
-                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-6.jpg"}
-                    %i.ti-zoom-in
-                  %a{:href => "#"}
-                    %i.ti-gallery
-          .gallery-item
-            %img{:alt => "img", :src => "img/footer/gallery/photo-7.jpg", :title => "image"}/
-            .gallery-overlay
-              .gallery-content
-                .gallery-content-inner
-                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-7.jpg"}
-                    %i.ti-zoom-in
-          .gallery-item
-            %img{:alt => "img", :src => "img/footer/gallery/photo-8.jpg", :title => "image"}/
-            .gallery-overlay
-              .gallery-content
-                .gallery-content-inner
-                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-8.jpg"}
-                    %i.ti-zoom-in
-                  %a{:href => "#"}
-                    %i.ti-gallery
-          .gallery-item
-            %img{:alt => "img", :src => "img/footer/gallery/photo-9.jpg", :title => "image"}/
-            .gallery-overlay
-              .gallery-content
-                .gallery-content-inner
-                  %a.image-popup-gallery{:href => "img/footer/gallery/photo-9.jpg"}
-                    %i.ti-zoom-in
-                  %a{:href => "#"}
-                    %i.ti-gallery
+      .col-md-4.col-sm-6.col-12.center-holder-xs
+        .short
+          %h3
+            %a{:href => "/"}
+              View All Photos
+          .grid-gallery-3col.gallery-style-1.clearfix
+            .gallery-item
+              %img{:alt => "img", :src => "img/footer/gallery/photo-1.jpg", :title => "image"}/
+              .gallery-overlay
+                .gallery-content
+                  .gallery-content-inner
+                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-1.jpg"}
+                      %i.ti-zoom-in
+            .gallery-item
+              %img{:alt => "img", :src => "img/footer/gallery/photo-2.jpg", :title => "image"}/
+              .gallery-overlay
+                .gallery-content
+                  .gallery-content-inner
+                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-2.jpg"}
+                      %i.ti-zoom-in
+                    %a{:href => "#"}
+                      %i.ti-gallery
+            .gallery-item
+              %img{:alt => "img", :src => "img/footer/gallery/photo-3.jpg", :title => "image"}/
+              .gallery-overlay
+                .gallery-content
+                  .gallery-content-inner
+                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-3.jpg"}
+                      %i.ti-zoom-in
+                    %a{:href => "#"}
+                      %i.ti-gallery
+            .gallery-item
+              %img{:alt => "img", :src => "img/footer/gallery/photo-4.jpg", :title => "image"}/
+              .gallery-overlay
+                .gallery-content
+                  .gallery-content-inner
+                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-4.jpg"}
+                      %i.ti-zoom-in
+            .gallery-item
+              %img{:alt => "img", :src => "img/footer/gallery/photo-5.jpg", :title => "image"}/
+              .gallery-overlay
+                .gallery-content
+                  .gallery-content-inner
+                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-5.jpg"}
+                      %i.ti-zoom-in
+                    %a{:href => "#"}
+                      %i.ti-gallery
+            .gallery-item
+              %img{:alt => "img", :src => "img/footer/gallery/photo-6.jpg", :title => "image"}/
+              .gallery-overlay
+                .gallery-content
+                  .gallery-content-inner
+                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-6.jpg"}
+                      %i.ti-zoom-in
+                    %a{:href => "#"}
+                      %i.ti-gallery
+            .gallery-item
+              %img{:alt => "img", :src => "img/footer/gallery/photo-7.jpg", :title => "image"}/
+              .gallery-overlay
+                .gallery-content
+                  .gallery-content-inner
+                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-7.jpg"}
+                      %i.ti-zoom-in
+            .gallery-item
+              %img{:alt => "img", :src => "img/footer/gallery/photo-8.jpg", :title => "image"}/
+              .gallery-overlay
+                .gallery-content
+                  .gallery-content-inner
+                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-8.jpg"}
+                      %i.ti-zoom-in
+                    %a{:href => "#"}
+                      %i.ti-gallery
+            .gallery-item
+              %img{:alt => "img", :src => "img/footer/gallery/photo-9.jpg", :title => "image"}/
+              .gallery-overlay
+                .gallery-content
+                  .gallery-content-inner
+                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-9.jpg"}
+                      %i.ti-zoom-in
+                    %a{:href => "#"}
+                      %i.ti-gallery
 
       / Column 2 End
       / Column 3 Start
       .col-md-3.col-sm-6.col-12
         .short
-          %h3 Recent Post
-          .blog-list
-            %img{:alt => "img", :src => "http://via.placeholder.com/945x480"}/
-            %p.heading
-              Reviews on Spray Foam Insulation
-            %p.body
-              Reviews On Spray Foam Insulation: Our Best Articles of 2017The end of the year brings the inevitable reviews and “Best Of” lists in all kinds of categories...
-            .mt-20
-              %a.button-xs.primary-button{:href => "#"} Read More
+          .heading
+            %h3
+              %a{:href => "/"}
+                View Recent Article
+          %img{:alt => "img", :src => "img/footer/article.jpg"}/
+          .heading
+            .article
+              %a{:href => "/"}
+                Reviews on Spray Foam Insulation
+          %p.body
+            The end of the year brings the inevitable reviews and “Best Of” lists in all kinds of categories. This year, we decided to join in on the fun and post our reviews on spray foam insulation, or the best...
+            %a.primary-color{:href => "#"} Read More
 
       / Column 3 End
       / Column 3 Start
       .col-md-2.col-sm-6.col-12
         .short
-          %h3 Contact Info
-          %ul.footer-style-3-contact-info
-            %li
-              %i.fa.fa-phone
-              %span +11 (0) 123 456 7890
-            %li
-              %i.fa.fa-envelope-open
-              %span specthemes@gmail.com
-            %li
-              %i.fa.fa-map-marker-alt
-              %span New York, NY Sheram 113
-            %li
-              %i.fa.fa-phone-square
-              %span +11 (0) 123 456 7890
+          .heading
+            %h3
+              Contact Us
+          .body
+            %h3.mb-0
+              ALI
+            %ul.footer-style-3-contact-info
+              %li
+                %i.fa.fa-phone
+                %span
+                  %a{:href => "tel:1-647-829-9797"}
+                    +1(647) 829-9797
+              %li
+                %i.fa.fa-envelope-open
+                %span
+                  %a{:href => "mailto:ali@bestinsulation.ca?Subject=Website-%20Services%20Inquiry", :target => "_top"}
+                    ali@bestinsulation.ca
+
+            %h3.mb-0.mt-10{style:"margin-top:10px"}
+              MO
+            %ul.footer-style-3-contact-info
+              %li
+                %i.fa.fa-phone
+                %span
+                  %a{:href => "tel:1-416-319-1212"}
+                    +1(416) 319-1212
+              %li
+                %i.fa.fa-envelope-open
+                %span
+                  %a{:href => "mailto:mo@chicasadesign.com?Subject=Website-%20Services%20Inquiry", :target => "_top"}
+                    ali@bestinsulation.ca
+            %ul.footer-style-3-contact-info.mt-10
+              %li
+                %i.fa.fa-map-marker-alt
+                %span
+                  %a{:href => "https://goo.gl/maps/xZDzag2pVuQ2", target:"_blank"}
+                    9040 Leslie St #201
+                    %br
+                    Richmond Hill, ON
+                    %br
+                    L4B 3L8 Canada
+
+              %li
+                %i.fa.fa-globe
+                %span
+                  %a{:href => "http://www.bestinsulation.ca/"}
+                    www.bestinsulation.ca
+
       / Column 3 End
-  .footer-style-3-bar
+  .footer-style-3-bar.mt-30
     .container
       .row
-        .col-md-4.col-sm-6.col-12.mt-10
+        .col-md-3.col-sm-6.col-12.mt-10.center-holder-xs
           %h5.btm-footer
-            SpecThemes © 2018. All Rights Reserved.
-        .col-md-4.col-sm-6.col-12.center-holder.center-holder-xs
+            © 2018 Best Insulation. All Rights Reserved.
+        .col-md-3.col-sm-6.col-12.right-holder.center-holder-xs.offset-md-1
           %ul.footer-style-3-social-links
             %li
               %a{:href => "#"}
-                %i.fab.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fab.fa-linkedin
+                %i.fab.fa-facebook-f
             %li
               %a{:href => "#"}
                 %i.fab.fa-twitter
@@ -183,12 +261,17 @@
                 %i.fab.fa-pinterest
             %li
               %a{:href => "#"}
-                %i.fab.fa-skype
-        .col-md-4.col-sm-6.col-12.mt-10.right-holder.center-holder-xs
+                %i.fab.fa-instagram
+            %li
+              %a{:href => "#"}
+                %i.fab.fa-google-plus-g
+
+        .col-md-3.col-sm-6.col-12.mt-10.right-holder.center-holder-xs.offset-1
           %h5.btm-footer
-            Website Designed by
+            Created with love
             %a{:href => "/"}
-              %psan Arif Alim
+              %span{style:"margin-top"}
+                %img.img-fluid{:alt => "Designed and developed by Arif Alim", :src => "img/footer/logos/arif_icon.png", style:"width: 30px; margin-top: -18px; margin-left:10px"}/
 
 
 / Footer END
