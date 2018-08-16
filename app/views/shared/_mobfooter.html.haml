@@ -1,78 +1,4 @@
-:css
-  .footer-style-3 h3 {
-    margin-bottom: 18px;
-    font-size: 15px;
-  }
-  .grid-gallery-3col {
-    margin-top: -1px;
-  }
-  .grid-gallery-3col .gallery-item {
-    width: calc(100% / 3 - 6px);
-    margin: 1px;
-    float:right;
-  }
-  h3 a {
-    color: white;
-  }
-  h3 a:hover {
-    color: #DFC746;
-  }
-
-  ul li span a{
-    font-size: 13px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 0px;
-  }
-  ul li span a:hover{
-    font-size: 13px;
-    font-weight: 600;
-    color: #DFC746;
-    margin-bottom: 0px;
-  }
-  .short .heading {
-    font-size: 15px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 0px;
-  }
-  .short .heading .article{
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 0px;
-    padding: 10px 0 10px 0;
-  }
-  .short .heading a {
-    color: #fff;
-  }
-  .short .heading a:hover {
-    color: #DFC746;
-  }
-  .short .body ul li span {
-    color:white;
-  }
-  .short .body {
-    font-weight: 500;
-    font-size: 13px;
-    color: #fff;
-    padding-top: 0px;
-    margin-top: 0px;
-  }
-  .short .body a {
-    color: white;
-  }
-  .short .body a:hover {
-    color: #DFC746;
-  }
-  .footer-style-3-bar .btm-footer {
-    font-weight: 500;
-  }
-  .footer-style-3-bar .btm-footer a {
-    font-weight: 500;
-  }
-
-%footer.footer-style-3.background-center.black-overlay-60.hidden-sm-down{:style => "background-image: url(img/footer/footer-background.jpg);"}
+%footer.footer-style-3.background-center.black-overlay-60.hidden-sm-up
   .container
     .row
       / Column 1 Start
@@ -168,7 +94,7 @@
 
       / Column 2 End
       / Column 3 Start
-      .col-md-3.col-sm-6.col-12
+      .col-md-3.col-sm-6.col-12.center-holder-xs
         .short
           .heading
             %h3
@@ -185,7 +111,7 @@
 
       / Column 3 End
       / Column 3 Start
-      .col-md-2.col-sm-6.col-12
+      .col-md-2.col-sm-6.col-12.center-holder-xs
         .short
           .heading
             %h3
@@ -260,36 +186,9 @@
               %a{:href => "#"}
                 %i.fab.fa-google-plus-g
 
-        .col-md-3.col-sm-6.col-12.mt-10.right-holder.center-holder-xs.offset-1
+        .col-md-3.col-sm-6.col-12.mt-10.right-holder.center-holder-xs.mb-50
           %h5.btm-footer
             Created with love
             %a{:href => "/"}
               %span{style:"margin-top"}
                 %img.img-fluid{:alt => "Designed and developed by Arif Alim", :src => "img/footer/logos/arif_icon.png", style:"width: 30px; margin-top: -18px; margin-left:10px"}/
-
-
-/ Footer END
-/ Scroll to top button Start
-%a.scroll-to-top{:href => "#"}
-  %i.fas.fa-chevron-up
-/ Scroll to top button End
-/ Jquery
-%script{:src => "js/jquery.min.js"}
-/ Plugins JS
-%script{:src => "js/plugins.js"}
-/ Navbar JS
-%script{:src => "js/navigation.js"}
-%script{:src => "js/navigation.fixed.js"}
-/ Google Map
-%script{:src => "js/map.js"}
-/ Main JS
-%script{:src => "js/main.js"} */
-
-/ Start of Zendesk Chat Script
-:javascript
-  window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-  d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-  _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-  $.src="https://v2.zopim.com/?5vo8CGYePJBSjlt0UyzgJGGoaHYQRAD6";z.t=+new Date;$.
-  type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-/ End of Zendesk Chat Script
