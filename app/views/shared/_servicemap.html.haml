@@ -27,7 +27,9 @@
     font-size: 13px;
     line-height: 1.6;
   }
-
+  .map {
+    height: 100%;
+  }
 
 / Team Section START
 .section.section-sm.pt-0
@@ -107,4 +109,5 @@
             %a{:href => "/", style:"font-weight:600"} • Forest Hill, Toronto
           .mt-20
             %a.primary-button.button-xs{:href => "#", style:"width:100%"} Call Us +1(647) 829-9797
-    %iframe{:height => "600px", :src => "https://snazzymaps.com/embed/90536", :style => "border:none;", :width => "100%"}
+    #map.map-2
+      %iframe{:height => "600px", :src => "https://snazzymaps.com/embed/90536", :style => "border:none;", :width => "100%"}

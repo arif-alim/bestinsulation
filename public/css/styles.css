@@ -8365,6 +8365,9 @@ Style 1
 .map-1{
 	height: 350px;
 }
+.map-2{
+	height: 100%;
+}
 
 .contact-box-place-office{
     position: relative;

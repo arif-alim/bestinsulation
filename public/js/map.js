@@ -178,7 +178,7 @@ function initMap() {
           ]
       }
   ],
-  
+
   {name: 'Styled Map'});
 
   // Create a map object, and include the MapTypeId to add
