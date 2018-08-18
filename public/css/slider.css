@@ -355,15 +355,16 @@ Main Video Section Section Styles
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    object-fit: screen;
 }
 
 @media (max-width: 767px) {
   .main-video-section{
-    height: auto;
+    height: 440px;
   }
   .main-video-content{
-    height: auto;
-    padding: 50px 0px;
+    margin-top: -75px;
+    object-fit: screen;
   }
 }
 

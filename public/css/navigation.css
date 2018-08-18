@@ -46,6 +46,7 @@
   position: fixed !important;
   -webkit-animation: fade .50s;
   animation: fade .50s;
+  max-height: 80px;
 }
 
 @keyframes fade {
@@ -85,6 +86,7 @@
 }
 
 .nav-header {
+  height: 80px;
   float: left;
 }
 
@@ -215,6 +217,7 @@
   list-style: none;
   line-height: normal;
   font-size: 0;
+  height: 80px;
 }
 
 .navigation-portrait .nav-menu {
@@ -251,7 +254,7 @@
 
 .nav-menu > li > a {
   height: 80px;
-  padding: 30px 12px 0px 12px;
+  padding: 21px 10px 0px 10px;
   display: inline-block;
   position: relative;
   text-decoration: none;

@@ -13515,16 +13515,13 @@ Style 3
 }
 
 .footer-style-3-social-links li a{
-	display: block;
 	font-size: 20px;
 	color: #fff;
-  width: 35px;
-  height: 35px;
-	padding: 3px;
+	padding: 5px;
 }
 
-.footer-style-3-social-links li:hover{
-	background: #DFC746;
+.footer-style-3-social-links li a:hover{
+	color: #DFC746;
 }
 
 
