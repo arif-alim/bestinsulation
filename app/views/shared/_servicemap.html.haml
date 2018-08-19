@@ -27,6 +27,15 @@
     font-size: 13px;
     line-height: 1.6;
   }
+  .mapheading .container .call a {
+    color:black;
+  }
+  .mapheading .container .call a:hover {
+    color:white;
+  }
+  .mapheading .container a .primary-button {
+    color:black;
+  }
   .map {
     height: 100%;
   }
@@ -38,7 +47,7 @@
       %h2.bold
         Proudly Serving
         %span.italic.libre-baskerville.primary-color The Greater Toronto Area
-        .section-heading-line
+        -# .section-heading-line
       %p
         Our expert team never rests on our accomplishments. We didn’t get to where we are by being one of the crowd. Our team believes in innovation, and an expertly insulated home can drastically reduce your monthly energy bills and consumption, but also add the value of your home investment, and is also an excellent ethical choice that is great for the environment. Why wait? give us a call!
       .mt-15
@@ -108,6 +117,7 @@
           %span{style:"padding-left: 12px"}
             %a{:href => "/", style:"font-weight:600"} • Forest Hill, Toronto
           .mt-20
-            %a.primary-button.button-xs{:href => "#", style:"width:100%"} Call Us +1(647) 829-9797
+            .call
+              %a.primary-button.button-sm{:href => "#", style:"width:100%"} Call Us +1(647) 829-9797
     #map.map-2
       %iframe{:height => "600px", :src => "https://snazzymaps.com/embed/90536", :style => "border:none;", :width => "100%"}
