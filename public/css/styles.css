@@ -594,10 +594,13 @@ TABLE OF CONTENT
 .page-title ul li{
 	position: relative;
 	display: inline-block;
+  font-size: 14px;
+  color: #E8CF49;
+  padding-left: 5px;
 }
 
 .page-title ul li:after{
-	content: "●";
+	content: ">";
 	font-size: 13px;
 	display: inline-block;
 	color: #fff;
@@ -612,11 +615,11 @@ TABLE OF CONTENT
 .page-title ul li a{
 	position: relative;
 	display: inline-block;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 500;
 	line-height: 1;
 	color: #fff;
-	opacity: .5;
+	opacity: .8;
 	text-align: center;
 	margin-bottom: 5px;
 	margin: 5px;
@@ -624,6 +627,7 @@ TABLE OF CONTENT
 
 .page-title ul li a:hover{
 	opacity: 1;
+  color: #E8CF49;
 }
 
 
@@ -14031,4 +14035,126 @@ Style 4
 }
 .mb-100 {
   margin-bottom: 100px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+.pl-10 {
+padding-left: 10px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pl-25 {
+  padding-left: 25px;
+}
+.pl-30 {
+  padding-left: 30px;
+}
+.pl-35 {
+  padding-left: 35px;
+}
+.pl-40 {
+  padding-left: 40px;
+}
+.pl-45 {
+  padding-left: 45px;
+}
+.pl-50 {
+  padding-left: 50px;
+}
+.pr-5 {
+  padding-right: 5px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.pr-15 {
+  padding-right: 15px;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+.pr-25 {
+  padding-right: 25px;
+}
+.pr-30 {
+  padding-right: 30px;
+}
+.pr-35 {
+  padding-right: 35px;
+}
+.pr-40 {
+  padding-right: 40px;
+}
+.pr-45 {
+  padding-right: 45px;
+}
+.pr-50 {
+  padding-right: 50px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-25 {
+  margin-right: 25px;
+}
+.mr-30 {
+  margin-right: 30px;
+}
+.mr-35 {
+  margin-right: 35px;
+}
+.mr-40 {
+  margin-right: 40px;
+}
+.mr-45 {
+  margin-right: 45px;
+}
+.mr-50 {
+  margin-right: 50px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.ml-25 {
+  margin-left: 25px;
+}
+.ml-30 {
+  margin-left: 30px;
+}
+.ml-35 {
+  margin-left: 35px;
+}
+.ml-40 {
+  margin-left: 40px;
+}
+.ml-45 {
+  margin-left: 45px;
+}
+.ml-50 {
+  margin-left: 50px;
 }

@@ -1,12 +1,12 @@
 / Callback Section START
-.section-block.section-sm.pt-10.pb-30
+.section-block.section-sm.pb-30.pt-0
   .container
-    .row
-      .col-md-3.col-sm-4.col-12
-        .section-heading.left-holder
-          %h4.bold Customer Promise
+    .row.pl-15.pr-15
+      .col-md-4.col-sm-4.col-12.pt-30
+        .section-heading.right-holder
+          %h5.bold
+            Why Choose Best Insulation
           -# .section-heading-line
-        .text-content
           %p
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -14,10 +14,11 @@
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      .col-md-4.col-sm-4.col-12.offset-1
+      .col-md-4.col-sm-4.col-12.pt-10
         / Callback Block Start
         .contact-form-md.white-background.shadow-light.center-holder
-          %h5 Request a Callback
+          %h5
+            Request a Callback
           / Form Start
           %form.mt-30{:action => "#", :method => "get"}
             %input{:name => "name", :placeholder => "Your Name", :type => "text"}/
@@ -26,11 +27,11 @@
             %button.primary-button.button-sm.full-width{:type => "submit"} Send Message
           / Form End
         / Callback Block End
-      .col-md-3.col-sm-4.col-12.offset-1
+      .col-md-4.col-sm-4.col-12.pt-30
         .section-heading.left-holder
-          %h4.bold Customer Satisfaction
+          %h5.bold
+            Satisfaction Guaranteed
           -# .section-heading-line
-        .text-content
           %p
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
