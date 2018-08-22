@@ -1062,9 +1062,9 @@ a) Text-content
 }
 
 .text-content-small p{
-	font-size: 13px !important;
+	font-size: 14px !important;
 	font-weight: 600;
-	color: #999;
+	color: #555;
 	line-height: 190%;
 	margin-bottom: 15px;
 }
