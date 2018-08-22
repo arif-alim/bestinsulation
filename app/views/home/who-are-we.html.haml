@@ -2,13 +2,13 @@
   .subheading {
     font-size: 16px;
     color: #777;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
   }
 / Page Title START
 .page-title.jarallax.black-overlay-30{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('/img/about/banner.jpg');"}
   .container
-    %h1 About us modern style
+    %h1 Who are we?
     %ul
       %li
         %a{:href => "/"} Home
@@ -17,44 +17,43 @@
       %li
         Who Are We?
 / Page Title END
-.section-block.pt-50.pb-0
+.section-block.pt-50.pb-30
   .container
     .row
       .col-md-10.col-sm-12.col-12.offset-md-1
         .section-heading.center-holder
-          %small We're thinking big
+          %small
+            We thrive on customer satisfaction!
           %h2.bold
-            Delivering results
-            %span.italic.libre-baskerville that endure
-            = succeed "Technology" do
-              %br/
-          .section-heading-line
-        .text-content-big.center-holder.mt-25
+            Quality Insulation from
+            %span.italic.libre-baskerville
+              knowledgeable
+            Team
+          -# .section-heading-line
+        .text-content-small.center-holder.mt-25
           %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Best Insulation offers free consultations to help clients decide which insulation product is the best solution. We are capable of servicing the smallest local contracts to the largest residential jobs throughout the Greater Toronto Area. Best Insulation is a family run company that prides itself on high knowledge and craftsmanship. A owner is always on site during installation and available to you 24/7.
     .center-holder.mt-10
-      %a.button-md.primary-button{:href => "#"} More About Us
+      %a.button-sm.primary-button{:href => "#"} Customer Promise
 
 / Info Section START
-.section-block
+.section-block.pt-0
   .container
     .row
       .col-md-10.col-sm-12.col-12.offset-md-1
         .row
-          .col-md-6.col-sm-6.col-12
+          .col-md-6.col-sm-6.col-12.pt-30
             %img.shadow-light.rounded-border{:alt => "img", :src => "img/about/team.jpg"}/
             .section-heading.left-holder.mt-30
-              %h4.bold The Dream Team is Qualified and Specialize in Spray Foam Insulation
+              .subheading
+                Why Choose Best Insulation?
+              %h4.bold
+                The Dream Team is Qualified and Specialize in Spray Foam Insulation
               .section-heading-line
             .text-content-small
               %p
                 Spray Polyurethane Foam is a unique insulation product that requires specialized installation. Best Insulation installers are highly trained and experienced with both the product and installation. They understand the nuances of spray and the complexities of installation.
-          .col-md-6.col-sm-6.col-12
+          .col-md-6.col-sm-6.col-12.pt-30
             .section-heading.left-holder
               .subheading
                 Why Choose Best Insulation?
