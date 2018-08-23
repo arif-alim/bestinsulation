@@ -2,41 +2,46 @@
 .section-block.section-sm.pb-30.pt-0
   .container
     .row.pl-15.pr-15
-      .col-md-4.col-sm-4.col-12.pt-30
-        .section-heading.right-holder
-          %h5.bold
-            Why Choose Best Insulation
+      .col-md-6.col-sm-6.col-12.pt-30
+        .section-heading.mb-30
+          %h5.bold.mb-0
+            Customer Promise
+          -# .section-heading-line
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+
+        .section-heading
+          %h5.bold.mb-0
+            We Guarantee Our Work
           -# .section-heading-line
           %p
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      .col-md-4.col-sm-4.col-12.pt-10
+
+
+
+      .col-md-5.col-sm-6.col-12.pt-10.offset-md-1
         / Callback Block Start
         .contact-form-md.white-background.shadow-light.center-holder
           %h5
-            Request a Callback
+            %b
+              Request a callback
           / Form Start
-          %form.mt-30{:action => "#", :method => "get"}
-            %input{:name => "name", :placeholder => "Your Name", :type => "text"}/
-            %input{:name => "email", :placeholder => "Your Email", :type => "email"}/
-            %input{:name => "phone", :placeholder => "Your Phone Number", :type => "text"}/
-            %button.primary-button.button-sm.full-width{:type => "submit"} Send Message
+          %form.mt-20
+            .row.pl-20.pr-20
+              .col-md-6.col-sm-6.col-12
+                %input{:name => "name", :placeholder => "* Name", :type => "text"}/
+              .col-md-6.col-sm-6.col-12
+                %input{:name => "email", :placeholder => "* E-mail", :type => "email"}/
+              .col-md-12.col-sm-12.col-12
+                %input{:name => "phone", :placeholder => "* Phone Number", :type => "phone"}/
+              .col-md-12.pt-10
+                %button.button-sm.primary-button.semi-rounded.full-width{:type => "submit"}
+                  Send Callback Request
           / Form End
         / Callback Block End
-      .col-md-4.col-sm-4.col-12.pt-30
-        .section-heading.left-holder
-          %h5.bold
-            Satisfaction Guaranteed
-          -# .section-heading-line
-          %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 / Callback Section END

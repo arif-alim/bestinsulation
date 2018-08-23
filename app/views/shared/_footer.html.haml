@@ -1,4 +1,18 @@
 :css
+  .testmonial-box p {
+    font-size: 12px;
+    color: black;
+    font-style: italic;
+  }
+  .testmonial-box a {
+    font-weight: 600;
+    font-size: 12px;
+    color: black;
+  }
+  .testmonial-box a:hover {
+    color: #E8CF49;
+  }
+
   .footer-style-3 h3 {
     margin-bottom: 18px;
     font-size: 15px;
@@ -134,15 +148,29 @@
           .heading
             %h3
               %a{:href => "/"}
-                View Recent Article
-          %img{:alt => "img", :src => "img/footer/article.jpg"}/
-          .heading
-            .article
-              %a{:href => "/"}
-                Reviews on Spray Foam Insulation
-          %p.body
-            The end of the year brings the inevitable reviews and “Best Of” lists in all kinds of categories. This year, we decided to join in on the fun and post our reviews on spray foam insulation, or the best...
-            %a.primary-color{:href => "#"} Read More
+                HomeStars Review
+          %a{:href => "https://homestars.com/companies/2912899-best-insulation", :target => "_blank"}
+            %img{:alt => "HomeStars Reviews Custom Logo", :src => "img/footer/homestars_icon_new.png", :style => "width:95%;"}/
+          .testmonial-box.mt-10
+            .row
+              .col-md-12.col-sm-12
+                .row
+                  .col-md-6.col-sm-6.col-6
+                    %h6{:style => "font-size:13px; line-height: 1.4;"}
+                      Michelle Toronto ON
+                  .col-md-6.col-sm-6.col-6
+                    .testmonial-box-rating.right-holder
+                      %h6{:style => "font-size:13px;"}
+                        Best Insulation
+                      %i.fas.fa-star
+                      %i.fas.fa-star
+                      %i.fas.fa-star
+                      %i.fas.fa-star
+                      %i.fas.fa-star
+                  %p.pr-15.pl-15
+                    "I had my whole house insulated by Best Insulation in addition to dry wall, plaster and paint. They take care of everythin..."
+                  %a.pr-15.pl-15{:href => "reviews"}
+                    View All Reviews
 
       / Column 3 End
       / Column 3 Start

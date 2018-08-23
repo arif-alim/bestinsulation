@@ -1149,8 +1149,9 @@ b) Image-properties
 }
 
 .shadow-light{
-  -webkit-box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 8px 8px 0px rgba(0,0,0,0.1);
+  box-shadow: 8px 8px 0px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
 }
 @media (max-width: 767px) {
 	.shadow-light{
@@ -4044,15 +4045,15 @@ Style 1
 .testmonial-box{
 	position: relative;
 	background: #fff;
-	border-radius: 10px;
-	padding: 25px;
-	border: 1px solid #eee;
-	margin: 15px 0px;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
-    -webkit-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.1);
-    -moz-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.1);
-    box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.1);
+	border-radius: 6px;
+	padding: 14px;
+	/* border: 1px solid #eee; */
+	/* margin: 15px 0px; */
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.1);
 }
 
 .testmonial-box-image img{
@@ -5084,7 +5085,7 @@ Style 1
 .contact-form-md{
 	position: relative;
 	border-radius: 10px;
-	padding: 30px 40px;
+	padding: 30px 16px;
 	margin: 15px 0px;
 }
 
@@ -5097,7 +5098,7 @@ Style 1
 	font-weight: 600;
 	width: 100%;
 	padding: 12px 16px;
-	margin: 15px 0px;
+	margin: 10px 0px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -8377,16 +8378,16 @@ Style 1
     position: relative;
     text-align: center;
     background: #fff;
-    border: 1px solid #ddd;
-    padding: 40px 80px;
+    /* border: 1px solid #ddd; */
+    padding: 40px 30px;
     border-radius: 5px;
     margin-bottom: 15px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 .contact-box-place-office:hover{
-    background: #f7f7f7;
-    border: 1px solid #eee;
+    background: #F6E89E;
+    /* border: 1px solid #eee; */
 }
 
 .contact-box-place-office i{
