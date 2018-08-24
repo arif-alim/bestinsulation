@@ -1,3 +1,7 @@
+:css
+  .primary-form input, .primary-form textarea, .primary-form select {
+    background: white;
+  }
 / Page Title START
 .page-title.jarallax.black-overlay-50{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('img/contact/banner-3.jpg');"}
   .container
@@ -78,7 +82,7 @@
 
       .col-md-6.col-sm-12.col-12
         / Form Start
-        %form.white-form.mt-30
+        %form.primary-form.mt-30
           .row
             .col-md-12.col-sm-12.col-12
               %input{:name => "name", :placeholder => "Name *", :type => "text"}/

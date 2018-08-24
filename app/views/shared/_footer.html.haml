@@ -16,6 +16,7 @@
   .footer-style-3 h3 {
     margin-bottom: 18px;
     font-size: 15px;
+    margin-top: 10px;
   }
   .grid-gallery-3col {
     margin-top: -1px;
@@ -86,12 +87,12 @@
     font-weight: 500;
   }
 
-%footer.footer-style-3.background-center.black-overlay-60.hidden-sm-down{:style => "background-image: url(img/footer/footer-background.jpg);"}
+%footer.footer-style-3.background-center.black-overlay-60.hidden-sm-down{:style => "background-image: url('img/footer/footer-background.jpg')"}
   .container
     .row
       / Column 1 Start
       .col-md-3.col-sm-6.col-12
-        %img{:alt => "Best Insulation Footer White Logo", :src => "img/logos/logo-footer.svg", style:"width: 250px;"}/
+        %img{:alt => "Best Insulation Footer White Logo", :src => "img/logos/logo-footer.svg", style:"width: 250px; margin-top: -15px"}/
         .mt-20
           %p.mb-0
             Best Insulation offers free consultations to help clients decide which insulation product is the best solution. We are capable of servicing the smallest local contracts to the largest residential jobs throughout the Greater Toronto Area. Best Insulation is a family run company that prides itself on high knowledge on its products and craftsmanship. A owner is always on site during installation and we are available to you 24/7.
@@ -179,52 +180,56 @@
             %h3
               Contact Us
           .body
-            %h3.mb-0
-              ALI
+            %h3.mb-0{:style => "font-weight: 900; letter-spacing: 2px; margin-top: 0px"}
+              ALI MOGHEI
             %ul.footer-style-3-contact-info
               %li
                 %i.fa.fa-phone
                 %span
                   %a{:href => "tel:1-647-829-9797"}
-                    +1(647) 829-9797
+                    +1 (647) 829-9797
               %li
                 %i.fa.fa-envelope-open
                 %span
                   %a{:href => "mailto:ali@bestinsulation.ca?Subject=Website-%20Services%20Inquiry", :target => "_top"}
                     ali@bestinsulation.ca
-
-            %h3.mb-0.mt-10{style:"margin-top:10px"}
-              MO
-            %ul.footer-style-3-contact-info
-              %li
-                %i.fa.fa-phone
-                %span
-                  %a{:href => "tel:1-416-319-1212"}
-                    +1(416) 319-1212
-              %li
-                %i.fa.fa-envelope-open
-                %span
-                  %a{:href => "mailto:mo@chicasadesign.com?Subject=Website-%20Services%20Inquiry", :target => "_top"}
-                    mo@bestinsulation.ca
-            %ul.footer-style-3-contact-info.mt-10
-              %li
-                %i.fa.fa-map-marker-alt
-                %span
-                  %a{:href => "https://goo.gl/maps/xZDzag2pVuQ2", target:"_blank"}
-                    9040 Leslie St #201
-                    %br
-                    Richmond Hill, ON
-                    %br
-                    L4B 3L8 Canada
-
               %li
                 %i.fa.fa-globe
                 %span
                   %a{:href => "http://www.bestinsulation.ca/"}
                     www.bestinsulation.ca
 
+            %h3.mb-0{:style => "font-weight: 900; letter-spacing: 2px; margin-top: 20px"}
+              MO SHAHRI
+            %ul.footer-style-3-contact-info
+              %li
+                %i.fa.fa-phone
+                %span
+                  %a{:href => "tel:1-416-319-1212"}
+                    +1 (416) 319-1212
+              %li
+                %i.fa.fa-envelope-open
+                %span
+                  %a{:href => "mailto:mo@chicasadesign.com?Subject=Website-%20Services%20Inquiry", :target => "_top"}
+                    mo@bestinsulation.ca
+              %li
+                %i.fa.fa-globe
+                %span
+                  %a{:href => "http://www.bestinsulation.ca/"}
+                    www.bestinsulation.ca
+            %ul.footer-style-3-contact-info{:style => "margin-top: 10px"}
+              %li
+                %i.fa.fa-map-marker-alt
+                %span{:style => "padding-left: 4px"}
+                  %a{:href => "https://goo.gl/maps/xZDzag2pVuQ2", target:"_blank"}
+                    9040 Leslie St #201
+                    .addy.clearfix{:style => "padding-left: 23px"}
+                      Richmond Hill, ON
+                    .clearfix.mb-0.pb-0{:style => "padding-left: 23px"}
+                      L4B 3L8 Canada
+
       / Column 3 End
-  .footer-style-3-bar.mt-30
+  .footer-style-3-bar{:style => "margin-top: 6px;"}
     .container
       .row
         .col-md-3.col-sm-6.col-12.mt-10.center-holder-xs

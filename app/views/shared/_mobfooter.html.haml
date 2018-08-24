@@ -4,106 +4,22 @@
   .container
     .row
       / Column 1 Start
-      .col-md-3.col-sm-6.col-12
-        %img{:alt => "Best Insulation Footer White Logo", :src => "img/logos/logo-footer.svg", style:"width: 250px;"}/
+      .col-md-3.col-sm-6.col-12.center-holder-xs.mt-15
+        %img{:alt => "Best Insulation Footer White Logo", :src => "img/logos/logo-footer.svg", style:"width: 300px;"}/
         .mt-20
           %p
             Best Insulation offers free consultations to help clients decide which insulation product is the best solution. We are capable of servicing the smallest local contracts to the largest residential jobs throughout the Greater Toronto Area. Best Insulation is a family run company that prides itself on high knowledge on its products and craftsmanship. A owner is always on site during installation and we are available to you 24/7.
           %a.small-text.white-color{:href => "#"} More About us
-      / Column 1 End
-      / Column 2 Start
-      .col-md-4.col-sm-6.col-12.center-holder-xs
-        .short
-          %h3
-            %a{:href => "/"}
-              View All Photos
-          .grid-gallery-3col.gallery-style-1.clearfix
-            .gallery-item
-              %img{:alt => "img", :src => "img/footer/gallery/photo-1.jpg", :title => "image"}/
-              .gallery-overlay
-                .gallery-content
-                  .gallery-content-inner
-                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-1.jpg"}
-                      %i.ti-zoom-in
-            .gallery-item
-              %img{:alt => "img", :src => "img/footer/gallery/photo-2.jpg", :title => "image"}/
-              .gallery-overlay
-                .gallery-content
-                  .gallery-content-inner
-                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-2.jpg"}
-                      %i.ti-zoom-in
-                    %a{:href => "#"}
-                      %i.ti-gallery
-            .gallery-item
-              %img{:alt => "img", :src => "img/footer/gallery/photo-3.jpg", :title => "image"}/
-              .gallery-overlay
-                .gallery-content
-                  .gallery-content-inner
-                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-3.jpg"}
-                      %i.ti-zoom-in
-                    %a{:href => "#"}
-                      %i.ti-gallery
-            .gallery-item
-              %img{:alt => "img", :src => "img/footer/gallery/photo-4.jpg", :title => "image"}/
-              .gallery-overlay
-                .gallery-content
-                  .gallery-content-inner
-                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-4.jpg"}
-                      %i.ti-zoom-in
-            .gallery-item
-              %img{:alt => "img", :src => "img/footer/gallery/photo-5.jpg", :title => "image"}/
-              .gallery-overlay
-                .gallery-content
-                  .gallery-content-inner
-                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-5.jpg"}
-                      %i.ti-zoom-in
-                    %a{:href => "#"}
-                      %i.ti-gallery
-            .gallery-item
-              %img{:alt => "img", :src => "img/footer/gallery/photo-6.jpg", :title => "image"}/
-              .gallery-overlay
-                .gallery-content
-                  .gallery-content-inner
-                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-6.jpg"}
-                      %i.ti-zoom-in
-                    %a{:href => "#"}
-                      %i.ti-gallery
-            .gallery-item
-              %img{:alt => "img", :src => "img/footer/gallery/photo-7.jpg", :title => "image"}/
-              .gallery-overlay
-                .gallery-content
-                  .gallery-content-inner
-                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-7.jpg"}
-                      %i.ti-zoom-in
-            .gallery-item
-              %img{:alt => "img", :src => "img/footer/gallery/photo-8.jpg", :title => "image"}/
-              .gallery-overlay
-                .gallery-content
-                  .gallery-content-inner
-                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-8.jpg"}
-                      %i.ti-zoom-in
-                    %a{:href => "#"}
-                      %i.ti-gallery
-            .gallery-item
-              %img{:alt => "img", :src => "img/footer/gallery/photo-9.jpg", :title => "image"}/
-              .gallery-overlay
-                .gallery-content
-                  .gallery-content-inner
-                    %a.image-popup-gallery{:href => "img/footer/gallery/photo-9.jpg"}
-                      %i.ti-zoom-in
-                    %a{:href => "#"}
-                      %i.ti-gallery
 
-      / Column 2 End
       / Column 3 Start
-      .col-md-3.col-sm-6.col-12
+      .col-md-3.col-sm-6.col-12.center-holder-xs.mt-30
         .short
-          .heading
-            %h3
-              %a{:href => "/"}
-                HomeStars Review
+          -# .heading
+          -#   %h3
+          -#     %a{:href => "/"}
+          -#       HomeStars Review
           %a{:href => "https://homestars.com/companies/2912899-best-insulation", :target => "_blank"}
-            %img{:alt => "HomeStars Reviews Custom Logo", :src => "img/footer/homestars_icon_new.png", :style => "width:95%;"}/
+            %img{:alt => "HomeStars Reviews Custom Logo", :src => "img/footer/homestars_icon_new.png", :style => "width:200px;"}/
           .testmonial-box.mt-10
             .row
               .col-md-12.col-sm-12
@@ -127,55 +43,59 @@
 
       / Column 3 End
       / Column 3 Start
-      .col-md-2.col-sm-6.col-12.center-holder-xs
+      .col-md-2.col-sm-6.col-12.center-holder-xs.mt-60
         .short
           .heading
             %h3
               Contact Us
           .body
-            %h3.mb-0
-              ALI
+            %h3.mb-0{:style => "font-weight: 900; letter-spacing: 2px; margin-top: 0px"}
+              ALI MOGHEI
             %ul.footer-style-3-contact-info
               %li
                 %i.fa.fa-phone
                 %span
                   %a{:href => "tel:1-647-829-9797"}
-                    +1(647) 829-9797
+                    +1 (647) 829-9797
               %li
                 %i.fa.fa-envelope-open
                 %span
                   %a{:href => "mailto:ali@bestinsulation.ca?Subject=Website-%20Services%20Inquiry", :target => "_top"}
                     ali@bestinsulation.ca
-
-            %h3.mb-0.mt-10{style:"margin-top:10px"}
-              MO
-            %ul.footer-style-3-contact-info
-              %li
-                %i.fa.fa-phone
-                %span
-                  %a{:href => "tel:1-416-319-1212"}
-                    +1(416) 319-1212
-              %li
-                %i.fa.fa-envelope-open
-                %span
-                  %a{:href => "mailto:mo@chicasadesign.com?Subject=Website-%20Services%20Inquiry", :target => "_top"}
-                    ali@bestinsulation.ca
-            %ul.footer-style-3-contact-info.mt-10
-              %li
-                %i.fa.fa-map-marker-alt
-                %span
-                  %a{:href => "https://goo.gl/maps/xZDzag2pVuQ2", target:"_blank"}
-                    9040 Leslie St #201
-                    %br
-                    Richmond Hill, ON
-                    %br
-                    L4B 3L8 Canada
-
               %li
                 %i.fa.fa-globe
                 %span
                   %a{:href => "http://www.bestinsulation.ca/"}
                     www.bestinsulation.ca
+
+            %h3.mb-0{:style => "font-weight: 900; letter-spacing: 2px; margin-top: 20px"}
+              MO SHAHRI
+            %ul.footer-style-3-contact-info
+              %li
+                %i.fa.fa-phone
+                %span
+                  %a{:href => "tel:1-416-319-1212"}
+                    +1 (416) 319-1212
+              %li
+                %i.fa.fa-envelope-open
+                %span
+                  %a{:href => "mailto:mo@chicasadesign.com?Subject=Website-%20Services%20Inquiry", :target => "_top"}
+                    mo@bestinsulation.ca
+              %li
+                %i.fa.fa-globe
+                %span
+                  %a{:href => "http://www.bestinsulation.ca/"}
+                    www.bestinsulation.ca
+            %ul.footer-style-3-contact-info{:style => "margin-top: 10px"}
+              %li
+                %i.fa.fa-map-marker-alt
+                %span{:style => "padding-left: 4px"}
+                  %a{:href => "https://goo.gl/maps/xZDzag2pVuQ2", target:"_blank"}
+                    9040 Leslie St #201
+                    .addy.clearfix{:style => "padding-left: 23px"}
+                      Richmond Hill, ON
+                    .clearfix.mb-0.pb-0{:style => "padding-left: 23px"}
+                      L4B 3L8 Canada
 
       / Column 3 End
   .footer-style-3-bar.mt-30

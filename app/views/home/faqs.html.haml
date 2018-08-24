@@ -1,0 +1,115 @@
+
+/ Page Title START
+.page-title.jarallax.black-overlay-20{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('http://via.placeholder.com/1500x500');"}
+  .container
+    %h1 FAQ's
+/ Page Title END
+/ Info Section START
+.section-block.pb-0
+  .container
+    .row
+      .col-md-8.col-sm-12.col-12.offset-md-2
+        .section-heading.center-holder
+          %small Answers to most FAQ's
+          %h2.bold
+            Frequently Asked Questions
+        .text-content-small.center-holder
+          %p
+            Your home’s basement provides a huge opportunity for energy savings.  As much as 30% of your heat loss is due to an uninsulated basement. Spray foam your full basement to create a seamless
+        .center-holder
+          = render 'shared/quote'
+        %img.full-width.mt-30{:alt => "img", :src => "http://via.placeholder.com/945x541"}/
+/ Info Section END
+/ FAQ Section START
+.section-block.section-sm
+  .container
+    .row.mt-40
+      .col-md-10.col-sm-10.col-12.offset-md-1
+        .section-heading.center-holder
+          %h4.bold Frequently Asked Questions
+          .section-heading-line
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            = succeed "ut" do
+              %br/
+        / Accordions Start
+        #accordion3.mt-50{:role => "tablist"}
+          / Accordion Start
+          .card.card-grey
+            #headinggr1.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapseggr1", "aria-expanded" => "true", "data-toggle" => "collapse", :href => "#collapseggr1"}
+                  01. Where can I get access to Capital IQ ?
+            #collapseggr1.collapse{"aria-labelledby" => "headinggr1", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr2.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr2", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr2"}
+                  02. Where can I get information on companies ?
+            #collapsegr2.collapse{"aria-labelledby" => "headinggr2", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr3.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr3", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr3"}
+                  03. How can I find information on digital technology ?
+            #collapsegr3.collapse{"aria-labelledby" => "headinggr3", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr4.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr4", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr4"}
+                  04. How do I find information on mutual funds ?
+            #collapsegr4.collapse{"aria-labelledby" => "headinggr4", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr5.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr5", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr5"}
+                  05. Where can I find market research reports ?
+            #collapsegr5.collapse{"aria-labelledby" => "headinggr5", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          / Accordion End
+        / Accordions End
+/ FAQ Section END
