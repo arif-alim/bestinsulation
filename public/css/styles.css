@@ -10817,11 +10817,11 @@ Shop Product Review Form
 .card-grey a{
 	display: block;
 	font-size: 15px;
-	color: #E8CF49;
+	color: #000;
 }
 
 .card-grey a:hover{
-	color: #E8CF49;
+	color: #ccb53a;
 }
 .card-grey .collapsed:focus:hover{
 	color: #E8CF49;
@@ -10856,9 +10856,9 @@ Shop Product Review Form
 
 
 .card-body-grey p{
-	font-size: 14px;
-	font-weight: 500;
-	color: #999;
+	font-size: 13.5px;
+	font-weight: 600;
+	color: #555;
 	line-height: 1.7;
 }
 

@@ -1,14 +1,17 @@
-
+:css
+  .card-body.card-body-grey p {
+    margin-bottom: 15px;
+  }
 / Page Title START
-.page-title.jarallax.black-overlay-20{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('http://via.placeholder.com/1500x500');"}
+.page-title.jarallax.black-overlay-50{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('img/about/faqs/banner.jpg');"}
   .container
     %h1 FAQ's
 / Page Title END
 / Info Section START
-.section-block.pb-0
+.section-block.section-sm
   .container
     .row
-      .col-md-8.col-sm-12.col-12.offset-md-2
+      .col-md-10.col-sm-12.col-12.offset-md-1
         .section-heading.center-holder
           %small Answers to most FAQ's
           %h2.bold
@@ -19,82 +22,54 @@
         .center-holder
           %a.button-sm.primary-button{:href => "#"}
             Contact Us
-        %img.full-width.mt-30{:alt => "img", :src => "http://via.placeholder.com/945x541"}/
-/ Info Section END
-/ FAQ Section START
-.section-block.section-sm
-  .container
-    .row.mt-40
-      .col-md-10.col-sm-10.col-12.offset-md-1
-        .section-heading.center-holder
-          %h4.bold Frequently Asked Questions
-          .section-heading-line
-          %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-            = succeed "ut" do
-              %br/
-        / Accordions Start
         #accordion3.mt-50{:role => "tablist"}
           / Accordion Start
           .card.card-grey
             #headinggr1.card-header.card-header-grey{:role => "tab"}
               %h5.mb-0
                 %a.collapsed{"aria-controls" => "collapseggr1", "aria-expanded" => "true", "data-toggle" => "collapse", :href => "#collapseggr1"}
-                  01. Where can I get access to Capital IQ ?
+                  What is spray foam, and why should I use it in my home?
             #collapseggr1.collapse{"aria-labelledby" => "headinggr1", "data-parent" => "#accordion3", :role => "tabpanel"}
               .card-body.card-body-grey
                 %p
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                  Spray Polyurethane Foam insulation is a method of sealing and insulating that is sprayed in liquid form into wall cavities, attics, crawlspaces and other areas. It acts as both insulation and as an air barrier, preventing drafts from entering the building. The Canadian Urethane Foam Contractors Association (CUFCA) says, when properly installed, spray foam insulation is airtight, and can reduce heating and cooling costs by up to 50%.
+                %p
+                  Many homeowners are puzzled about which insulation to install, and particularly if spray foam is the best way to go. True, there are number of product options to choose from, but more and more professionals are recommending spray foam as the install that delivers the best results. Spray Polyurethane Foam has proven itself, time after time, to do more and perform far better than any of the comparable products that are advertised and marketed today.
+                %p
+                  Professionally installed, spray foam provides optimal energy efficiency by protecting a home (the building envelope) against heat loss. It means that indoor heat during wintertime will not leak out. And it means that outdoor heat during summer will not creep in. The result: heating and cooling equipment have to work less, and energy consumption is reduced from season to season. A good spray foam installation will save substantial dollars annually.
           / Accordion End
           / Accordion Start
           .card.card-grey
             #headinggr2.card-header.card-header-grey{:role => "tab"}
               %h5.mb-0
                 %a.collapsed{"aria-controls" => "collapsegr2", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr2"}
-                  02. Where can I get information on companies ?
+                  How do I insulate behind drywall?
             #collapsegr2.collapse{"aria-labelledby" => "headinggr2", "data-parent" => "#accordion3", :role => "tabpanel"}
               .card-body.card-body-grey
                 %p
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  In older homes, insulating exterior walls was not a priority. Energy costs were less than they are today, and saving energy wasn’t that important. In most homes, insulating the attic and basement was enough, even with insulation that was adequate at best. Once the drywall was up, especially in the basement, there wasn’t much reason to improve or upgrade the insulation.
           / Accordion End
           / Accordion Start
           .card.card-grey
             #headinggr3.card-header.card-header-grey{:role => "tab"}
               %h5.mb-0
                 %a.collapsed{"aria-controls" => "collapsegr3", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr3"}
-                  03. How can I find information on digital technology ?
+                  How do I remove insulation?
             #collapsegr3.collapse{"aria-labelledby" => "headinggr3", "data-parent" => "#accordion3", :role => "tabpanel"}
               .card-body.card-body-grey
                 %p
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  When it comes to insulation removal, the first thing to ask is whether it’s necessary. For the team at Best Insulation, insulation removal goes step by step - first, assessing if removal is required; second, assessing the amount of work; and third, providing options for re-insulating. For the average homeowner, its important to understand that insulation is not a DIY project.
           / Accordion End
           / Accordion Start
           .card.card-grey
             #headinggr4.card-header.card-header-grey{:role => "tab"}
               %h5.mb-0
                 %a.collapsed{"aria-controls" => "collapsegr4", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr4"}
-                  04. How do I find information on mutual funds ?
+                  How do I insulate my walls?
             #collapsegr4.collapse{"aria-labelledby" => "headinggr4", "data-parent" => "#accordion3", :role => "tabpanel"}
               .card-body.card-body-grey
                 %p
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  A well-insulated home will definitely save on energy consumption throughout the year. And for homeowners who want to reduce their hydro bill (electricity), insulation can play an important role. The fact is, properly insulating a home is considered one of the best home improvements, mainly because an energy-efficient home will save on utility costs. Every home, regardless of size, will benefit from enhanced insulation.
           / Accordion End
           / Accordion Start
           .card.card-grey
