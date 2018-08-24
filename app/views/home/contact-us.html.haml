@@ -1,6 +1,5 @@
-
 / Page Title START
-.page-title.jarallax.black-overlay-20{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('http://via.placeholder.com/1500x500);"}
+.page-title.jarallax.black-overlay-50{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('img/contact/banner-3.jpg');"}
   .container
     %h1 Contact Us
 / Form Section START
@@ -10,55 +9,85 @@
       .col-md-10.col-sm-12.col-12.offset-md-1
         .section-heading.center-holder
           %h3.bold.mb-0
-            Get in touch with
+            Don't worry, Best
             %span.primary-color
-              Us
-          %p
+              Insulation
+            can help
+          %p{:style => "font-weight:600; color: #555"}
             The team at Best Insulation is ready to take on any project. No project is too small or too big for us!
 
 
       .col-md-3.col-sm-12.col-12.mt-30
         .contact-box-place-office
-          %i.icon-building
-          %h4 London Office
-          %h6 Str. Sheram USA / 113
-          %p There are many variations of passages of Lorem load Ipsum available.
-          %ul
-            %li
-              %i.fas.fa-envelope-open>
-              specthemes@mail.com
-            %li
-              %i.fas.fa-phone>
-              (+987) 987-654-321
-            %li
-              %i.fas.fa-fax>
-              (+987) 123-456
+          %h4
+            ALI MOGHEI
+          %h6
+            Business Developer
+          .section-heading.left-holder.mt-20
+            %ul
+              %li
+                %i.fas.fa-phone
+                %a{:href => "tel:1-647-829-9797"}
+                  +1(647) 829-9797
+              %li
+                %i.fas.fa-envelope-open
+                %a{:href => "mailto:ali@bestinsulation.ca?Subject=Website-%20Services%20Inquiry", :target => "_top"}
+                  ali@bestinsulation.ca
+              %li
+                %i.fas.fa-globe
+                %a{:href => "http://www.bestinsulation.ca/"}
+                  www.bestinsulation.ca
+              %li{:style => "font-weight:500"}
+                %i.fas.fa-building
+                9040 Leslie St #201
+                %br
+                %span.pl-30
+                Richmond Hill, ON
+                %br
+                %span.pl-30
+                L4B 3L8 Canada
       .col-md-3.col-sm-12.col-12.mt-30
         .contact-box-place-office
-          %i.icon-building
-          %h4 London Office
-          %h6 Str. Sheram USA / 113
-          %p There are many variations of passages of Lorem load Ipsum available.
-          %ul
-            %li
-              %i.fas.fa-envelope-open>
-              specthemes@mail.com
-            %li
-              %i.fas.fa-phone>
-              (+987) 987-654-321
-            %li
-              %i.fas.fa-fax>
-              (+987) 123-456
+          %h4
+            MO SHAHRI
+          %h6
+            Project Manager
+          .section-heading.left-holder.mt-20
+            %ul
+              %li
+                %i.fas.fa-phone
+                %a{:href => "tel:1-416-319-1212"}
+                  +1(416) 319-1212
+              %li
+                %i.fas.fa-envelope-open
+                %a{:href => "mailto:mo@chicasadesign.com?Subject=Website-%20Services%20Inquiry", :target => "_top"}
+                  mo@bestinsulation.ca
+              %li
+                %i.fas.fa-globe
+                %a{:href => "http://www.bestinsulation.ca/"}
+                  www.bestinsulation.ca
+              %li{:style => "font-weight:500"}
+                %i.fas.fa-building
+                9040 Leslie St #201
+                %br
+                %span.pl-30
+                Richmond Hill, ON
+                %br
+                %span.pl-30
+                L4B 3L8 Canada
+
       .col-md-6.col-sm-12.col-12
         / Form Start
         %form.white-form.mt-30
           .row
-            .col-md-6.col-sm-6.col-12
+            .col-md-12.col-sm-12.col-12
               %input{:name => "name", :placeholder => "Name *", :type => "text"}/
+            .col-md-6.col-sm-6.col-12
+              %input{:name => "phone", :placeholder => "Phone Number *", :type => "phone"}/
             .col-md-6.col-sm-6.col-12
               %input{:name => "email", :placeholder => "E-mail *", :type => "email"}/
             .col-md-12.col-sm-12.col-12
-              %input{:name => "email", :placeholder => "Subject", :type => "email"}/
+              %input{:name => "subject", :placeholder => "Subject", :type => "message"}/
             .col-md-12
               %textarea{:name => "message", :placeholder => "Message *"}
             .col-md-12

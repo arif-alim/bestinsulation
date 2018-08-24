@@ -996,6 +996,7 @@ if ($(".full-height").length > 0) {
 /*------------------------------------
     19. Ripple Effect
 --------------------------------------*/
+/*
   try {
     $('.erreor-box-404').ripples({
       resolution: 512,
@@ -1035,4 +1036,4 @@ if ($(".full-height").length > 0) {
     var strength = 0.04 + Math.random() * 0.04;
 
     $el.ripples('drop', x, y, dropRadius, strength);
-  }, 400);
+  }, 400); */

@@ -1,0 +1,45 @@
+%button.primary-button.button-sm{"data-izimodal-open" => "#modal5", :style => "padding: 8px 20px 8px 20px; text-transform: uppercase; font-size: 12px; font-weight: 900"}
+  Request A Quote
+/ Modal Start
+#modal5.izimodal{"data-izimodal-fullscreen" => "true", "data-izimodal-transitionin" => "comingIn", "data-izimodal-width" => "1000px"}
+  / Close Button Start
+  .close-modal
+    %button.close-modal{"data-izimodal-close" => ""}
+      %i.ti-close
+  / Close Button Start
+  / Modal Body Start
+  .modal-inside.row.no-gutters
+    .col-md-5.col-sm-7.col-12
+      .full-background{:style => "background-image: url('img/quote/quote.jpg');"}
+    .col-md-7.col-sm-7.col-12
+      .inner-30
+        .modal-heading
+          %h4.bold
+            Let's Discuss Your Project
+          %p{:style => "font-weight: 600; color: #333; font-size: 13px"}
+            If you have any questions, please give us a call!
+        %form.primary-form.mt-30
+          .row
+            .col-md-12.col-sm-12.col-12
+              %input{:name => "name", :placeholder => "Name *", :type => "text"}/
+            .col-md-6.col-sm-6.col-12
+              %input{:name => "phone", :placeholder => "Phone Number *", :type => "phone"}/
+            .col-md-6.col-sm-6.col-12
+              %input{:name => "email", :placeholder => "E-mail *", :type => "email"}/
+            .col-md-12.col-sm-12.col-12
+              %input{:name => "address", :placeholder => "Property Address *", :type => "text"}/
+            .col-md-6.col-sm-6.col-12
+              %input{:name => "city", :placeholder => "City *", :type => "text"}/
+            .col-md-6.col-sm-6.col-12
+              %input{:name => "postal", :placeholder => "Postal Code *", :type => "text"}/
+            .col-md-6.col-sm-6.col-12
+              %input{:name => "service", :placeholder => "Service Area (basement, wall etc.)", :type => "text"}/
+            .col-md-6.col-sm-6.col-12
+              %input{:name => "area", :placeholder => "Approximate Sqft *", :type => "text"}/
+            .col-md-12
+              %textarea{:name => "message", :placeholder => "Project Description *"}
+            .col-md-12
+              %button.button-sm.primary-button.semi-rounded.full-width{:type => "submit", :style => "text-transform: uppercase; font-size: 13px; font-weight: 900"}
+                Request A Quote
+        / Form End
+  / Modal Body End
