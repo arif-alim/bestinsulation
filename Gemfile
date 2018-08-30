@@ -67,3 +67,6 @@ group :production do
 end
 
 gem 'haml'
+gem 'mail_form', '~> 1.7'
+gem 'simple_form', '~> 4.0'
+gem 'sendgrid'

@@ -1,6 +1,10 @@
 :css
-  .primary-form input, .primary-form textarea, .primary-form select {
-    background: white;
+  .alert-secondary {
+    font-size: 14px;
+    text-align: center;
+    background-color: #E8CF49;
+    border: none;
+    margin-top: 30px;
   }
 / Page Title START
 .page-title.jarallax.black-overlay-50{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('img/contact/banner-3.jpg');"}
@@ -11,6 +15,16 @@
   .container
     .row
       .col-md-10.col-sm-12.col-12.offset-md-1
+        -# - flash.each do |key, value|
+        -#   %div{class: key}
+        -#     .alert.alert-secondary.alert-dismissible
+        -#       %button.close{"data-dismiss" => "alert", :type => "button"} ×
+        -#       %strong
+        -#         = value
+
+            -# %a{"data-dismiss" => "alert", :href => "#"} ×
+            -# .alert
+            -#   = value
         .section-heading.center-holder
           %h3.bold.mb-0
             Don't worry, Best
@@ -81,21 +95,44 @@
                 L4B 3L8 Canada
 
       .col-md-6.col-sm-12.col-12
-        / Form Start
-        %form.primary-form.mt-30
+        - flash.each do |key, value|
+          %div{class: key}
+            .alert.alert-secondary.alert-dismissible
+              %button.close{"data-dismiss" => "alert", :type => "button"} ×
+              %strong
+                = value
+        = simple_form_for @contact, :html => {:class => 'primary-form mt-30' } do |f|
           .row
             .col-md-12.col-sm-12.col-12
-              %input{:name => "name", :placeholder => "Name *", :type => "text"}/
+              = f.input :name, :required => true, :placeholder => "Name *", :label => false
             .col-md-6.col-sm-6.col-12
-              %input{:name => "phone", :placeholder => "Phone Number *", :type => "phone"}/
+              = f.input :number, :required => true, :placeholder => "Phone Number *", :label => false
             .col-md-6.col-sm-6.col-12
-              %input{:name => "email", :placeholder => "E-mail *", :type => "email"}/
+              = f.input :email, :required => true, :placeholder => "Email *", :label => false
             .col-md-12.col-sm-12.col-12
-              %input{:name => "subject", :placeholder => "Subject", :type => "message"}/
+              = f.input :subject, :required => true, :placeholder => "Subject *", :label => false
             .col-md-12
-              %textarea{:name => "message", :placeholder => "Message *"}
+              = f.input :message, :as => :text, :required => true, :placeholder => "Message *", :label => false
             .col-md-12
-              %button.button-sm.primary-button.semi-rounded.full-width{:type => "submit"} Send Message
+              .hidden
+                = f.input :nickname, :hint => 'Leave this field blank!'
+            .col-md-12
+              = f.button :submit, 'Send Message', :class=> "button-sm primary-button semi-rounded full-width", :label => false
+
+        -# %form.primary-form.mt-30
+        -#   .row
+        -#     .col-md-12.col-sm-12.col-12
+        -#       %input{:name => "name", :placeholder => "Name *", :type => "text"}/
+        -#     .col-md-6.col-sm-6.col-12
+        -#       %input{:name => "phone", :placeholder => "Phone Number *", :type => "phone"}/
+        -#     .col-md-6.col-sm-6.col-12
+        -#       %input{:name => "email", :placeholder => "E-mail *", :type => "email"}/
+        -#     .col-md-12.col-sm-12.col-12
+        -#       %input{:name => "subject", :placeholder => "Subject", :type => "message"}/
+        -#     .col-md-12
+        -#       %textarea{:name => "message", :placeholder => "Message *"}
+        -#     .col-md-12
+        -#       %button.button-sm.primary-button.semi-rounded.full-width{:type => "submit"} Send Message
         / Form End
 
 / Form Section END

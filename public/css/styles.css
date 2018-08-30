@@ -2287,7 +2287,7 @@ i) Forms
     border-radius: 5px;
     border: none;
     outline: 0;
-    background: #F6F6F6;
+    /* background: #F6F6F6; */
     font-size: 13px;
     font-weight: 600;
     width: 100%;
@@ -14166,3 +14166,19 @@ padding-left: 10px;
 .ml-50 {
   margin-left: 50px;
 }
+
+
+.hidden { display: none; }
+/* Flash message */
+.success {
+
+}
+/* .success .alert {
+  color: white;
+  font-size: 20px;
+}
+
+.error .alert{
+  color: white;
+  font-size: 20px;
+} */
