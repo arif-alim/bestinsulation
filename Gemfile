@@ -67,3 +67,5 @@ group :production do
 end
 
 gem 'haml'
+gem 'mail_form'
+gem 'simple_form'

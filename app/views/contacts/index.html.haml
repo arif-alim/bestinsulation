@@ -1,0 +1,103 @@
+:css
+  .primary-form input, .primary-form textarea, .primary-form select {
+    background: white;
+  }
+/ Page Title START
+.page-title.jarallax.black-overlay-50{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('img/contact/banner-3.jpg');"}
+  .container
+    %h1 Contact Us
+/ Form Section START
+.section-block-grey.mb-30.pt-60
+  .container
+    .row
+      .col-md-10.col-sm-12.col-12.offset-md-1
+        .section-heading.center-holder
+          %h3.bold.mb-0
+            Don't worry, Best
+            %span.primary-color
+              Insulation
+            can help
+          %p{:style => "font-weight:600; color: #555"}
+            The team at Best Insulation is ready to take on any project. No project is too small or too big for us!
+
+
+      .col-md-3.col-sm-12.col-12.mt-30
+        .contact-box-place-office
+          %h4
+            ALI MOGHEI
+          %h6
+            Business Developer
+          .section-heading.left-holder.mt-20
+            %ul
+              %li
+                %i.fas.fa-phone
+                %a{:href => "tel:1-647-829-9797"}
+                  +1(647) 829-9797
+              %li
+                %i.fas.fa-envelope-open
+                %a{:href => "mailto:ali@bestinsulation.ca?Subject=Website-%20Services%20Inquiry", :target => "_top"}
+                  ali@bestinsulation.ca
+              %li
+                %i.fas.fa-globe
+                %a{:href => "http://www.bestinsulation.ca/"}
+                  www.bestinsulation.ca
+              %li{:style => "font-weight:500"}
+                %i.fas.fa-building
+                9040 Leslie St #201
+                %br
+                %span.pl-30
+                Richmond Hill, ON
+                %br
+                %span.pl-30
+                L4B 3L8 Canada
+      .col-md-3.col-sm-12.col-12.mt-30
+        .contact-box-place-office
+          %h4
+            MO SHAHRI
+          %h6
+            Project Manager
+          .section-heading.left-holder.mt-20
+            %ul
+              %li
+                %i.fas.fa-phone
+                %a{:href => "tel:1-416-319-1212"}
+                  +1(416) 319-1212
+              %li
+                %i.fas.fa-envelope-open
+                %a{:href => "mailto:mo@chicasadesign.com?Subject=Website-%20Services%20Inquiry", :target => "_top"}
+                  mo@bestinsulation.ca
+              %li
+                %i.fas.fa-globe
+                %a{:href => "http://www.bestinsulation.ca/"}
+                  www.bestinsulation.ca
+              %li{:style => "font-weight:500"}
+                %i.fas.fa-building
+                9040 Leslie St #201
+                %br
+                %span.pl-30
+                Richmond Hill, ON
+                %br
+                %span.pl-30
+                L4B 3L8 Canada
+
+      .col-md-6.col-sm-12.col-12
+        / Form Start
+        -# %form.primary-form.mt-30
+        = form_for @contact, class: "primary-form mt-30" do | f |
+          .row
+            .col-md-12.col-sm-12.col-12
+              = f.text_field :full_name, :placeholder => "Name HELLO *", class: "primary-form input", required: true, label: false
+              -# %input{:name => "name", :placeholder => "Name *", :type => "text"}/
+            .col-md-6.col-sm-6.col-12
+              %input{:name => "phone", :placeholder => "Phone Number *", :type => "phone"}/
+            .col-md-6.col-sm-6.col-12
+              %input{:name => "email", :placeholder => "E-mail *", :type => "email"}/
+            .col-md-12.col-sm-12.col-12
+              %input{:name => "subject", :placeholder => "Subject", :type => "message"}/
+            .col-md-12
+              %textarea{:name => "message", :placeholder => "Message *"}
+            .col-md-12
+              %button.button-sm.primary-button.semi-rounded.full-width{:type => "submit"} Send Message
+        / Form End
+
+/ Form Section END
