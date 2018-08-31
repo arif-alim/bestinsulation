@@ -38,7 +38,7 @@
             .col-md-6.col-sm-6.col-12
               = f.input :sqft, :required => true, :placeholder => "Approximate Sqft *", :label => false
             .col-md-12
-              = f.input :description, :required => true, :placeholder => "Project Description *", :label => false
+              = f.input :description, as: :text, :required => true, :placeholder => "Project Description *", :label => false
             .col-md-12
               = f.button :submit, 'Request A Quote', :class=> "button-sm primary-button semi-rounded full-width", :label => false
 

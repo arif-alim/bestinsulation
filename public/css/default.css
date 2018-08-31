@@ -11,7 +11,7 @@ TABLE OF CONTENT
 6. Clearfix
 7. Overflow
 8. Visibility
- 
+
 ==============================================
 [END] TABLE OF CONTENT
 ==============================================
@@ -29,7 +29,7 @@ TABLE OF CONTENT
 
 html, body {
   font-family: 'Open Sans', sans-serif;
-  color: #1c303e;        
+  color: #1c303e;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -66,12 +66,12 @@ img{
 	max-width: 100%;
 	height: auto;
 	-webkit-transition-duration: .3s;
-	transition-duration: .3s;		
+	transition-duration: .3s;
 }
 a{
   color: #222;
 	-webkit-transition-duration: .3s;
-	transition-duration: .3s;	
+	transition-duration: .3s;
 }
 
 a:active, a:hover, a:focus {
@@ -105,7 +105,7 @@ p{
   font-size: 15px;
   color: #999;
   line-height: 1.8;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 
@@ -185,7 +185,7 @@ p{
   height: 100%;
   vertical-align: middle;
   margin-right: -4px;
-  border-radius: 10px;  
+  border-radius: 10px;
   z-index: 1;
 }
 
@@ -205,7 +205,7 @@ p{
     width: 100%;
     vertical-align: middle;
     margin-right: -4px;
-    border-radius: 10px;  
+    border-radius: 10px;
     z-index: 1;
   }
 }
@@ -287,7 +287,7 @@ p{
 @media screen and (max-width:767px) {
   .mt-0-xs{
     margin-top: 0px !important;
-  } 
+  }
 }
 
 .mt-15-xs{
@@ -296,7 +296,7 @@ p{
 @media screen and (max-width:767px) {
   .mt-15-xs{
     margin-top: 15px;
-  } 
+  }
 }
 
 .mt-30-xs{
@@ -305,14 +305,14 @@ p{
 @media screen and (max-width:767px) {
   .mt-30-xs{
     margin-top: 30px;
-  } 
+  }
 }
 
 
 @media screen and (max-width:767px) {
   .mt-35-xs{
     margin-top: 35px;
-  } 
+  }
 }
 
 .mt-60-md{
@@ -366,7 +366,7 @@ p{
 @media screen and (max-width:767px) {
   .mb-15-xs{
     margin-bottom: 15px;
-  } 
+  }
 }
 
 /*------------------
@@ -378,7 +378,7 @@ p{
 @media screen and (max-width:767px) {
   .mr-30-md{
     margin-right: 0px;
-  } 
+  }
 }
 
 
@@ -417,38 +417,38 @@ p{
 
 
 .pl-15-md{
-  padding-left: 15px; 
+  padding-left: 15px;
 }
 @media screen and (max-width:991px) {
   .pl-15-md{
-    padding-left: 0px; 
+    padding-left: 0px;
   }
 }
 
 .pl-30-md{
-  padding-left: 30px; 
+  padding-left: 30px;
 }
 @media screen and (max-width:991px) {
   .pl-30-md{
-    padding-left: 0px; 
+    padding-left: 0px;
   }
 }
 
 .pl-45-md{
-  padding-left: 45px; 
+  padding-left: 45px;
 }
 @media screen and (max-width:991px) {
   .pl-45-md{
-    padding-left: 0px; 
+    padding-left: 0px;
   }
 }
 
 .pl-75-md{
-  padding-left: 75px; 
+  padding-left: 75px;
 }
 @media screen and (max-width:991px) {
   .pl-75-md{
-    padding-left: 0px; 
+    padding-left: 0px;
   }
 }
 
@@ -457,30 +457,30 @@ p{
 
 
 .pr-30-md{
-  padding-right: 30px; 
+  padding-right: 30px;
 }
 @media screen and (max-width:991px) {
   .pr-30-md{
-    padding-right: 0px; 
+    padding-right: 0px;
   }
 }
 
 .pr-45-md{
-  padding-right: 45px; 
+  padding-right: 45px;
 }
 @media screen and (max-width:991px) {
   .pr-45-md{
-    padding-right: 0px; 
+    padding-right: 0px;
   }
 }
 
 
 .pr-75-md{
-  padding-right: 75px; 
+  padding-right: 75px;
 }
 @media screen and (max-width:991px) {
   .pr-75-md{
-    padding-right: 0px; 
+    padding-right: 0px;
   }
 }
 
@@ -517,6 +517,7 @@ p{
 
 .inner-30{
   padding: 30px;
+  background: #fafafa;
 }
 
 
@@ -642,7 +643,7 @@ p{
 }
 
 .z-index-99{
-  z-index: 99; 
+  z-index: 99;
 }
 
 .z-index-999{
