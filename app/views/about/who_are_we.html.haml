@@ -11,9 +11,9 @@
     %h1 Who are we?
     %ul
       %li
-        %a{:href => "/"} Home
+        = link_to "Home", home_index_path
       %li
-        %a{:href => "#!"} About Us
+        = link_to "About Us", about_index_path
       %li
         Who Are We?
 / Page Title END
@@ -43,7 +43,7 @@
       .col-md-10.col-sm-12.col-12.offset-md-1
         .row
           .col-md-6.col-sm-6.col-12.pt-30
-            %img.rounded-border{:alt => "img", :src => "img/about/team.jpg"}/
+            %img.rounded-border{:alt => "img", :src => "/img/about/team.jpg"}/
             .section-heading.left-holder.mt-30
               .subheading
                 Qualified & Experienced?
@@ -62,5 +62,5 @@
             .text-content-small
               %p
                 Spray Polyurethane Foam is a unique insulation product that requires specialized installation. Best Insulation installers are highly trained and experienced with both the product and installation. They understand the nuances of spray and the complexities of installation.
-            %img.rounded-border.mt-20{:alt => "img", :src => "img/about/quality.jpg"}/
+            %img.rounded-border.mt-20{:alt => "img", :src => "/img/about/quality.jpg"}/
 / Info Section END

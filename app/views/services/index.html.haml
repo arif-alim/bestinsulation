@@ -1,0 +1,29 @@
+:css
+  .blog-grid-text h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .blog-grid-text p {
+    font-size: 13.5px;
+    color: #888;
+    font-weight: 600;
+  }
+  .video-image {
+    background-image: url('/img/home/video-background.jpg');
+    object-fit: cover;
+  }
+
+/ Page Title START
+.page-title.jarallax.black-overlay-30{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('/img/about/banner.jpg');"}
+  .container
+    %h1 Who are we?
+    %ul
+      %li
+        %a{:href => "/"} Home
+      %li
+        %a{:href => "#!"} About Us
+      %li
+        Who Are We?
+
+-#  Best Insulation Services
+= render 'shared/services'

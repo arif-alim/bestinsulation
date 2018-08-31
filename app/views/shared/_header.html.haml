@@ -3,70 +3,66 @@
 %header
   %nav#navigation1.container.navigation
     .nav-header
-      %a.nav-brand{:href => "index.html"}
+      %a.nav-brand{href: "/"}
         %img#main_logo{:alt => "logo", :src => "/img/logos/logo.svg", style:"width:230px; margin-bottom:-23px"}/
       .nav-toggle
     .nav-menus-wrapper
       %ul.nav-menu.align-to-right
         %li
-          %a{:href => "/"} Home
+          = link_to "Home", home_index_path
         %li
-          %a{:href => "#!"} About Us
+          = link_to "About Us", about_index_path
           %ul.nav-dropdown
             %li
-              %a{:href => "who-are-we"} Who Are We?
+              = link_to "Who Are We?", who_are_we_about_index_path
             %li
-              %a{:href => "customer-promise"} Customer Promise
+              = link_to "Customer Promise", customer_promise_about_index_path
             %li
-              %a{:href => "sustainability"} Sustainability
+              = link_to "Sustainability", sustainability_about_index_path
             %li
-              %a{:href => "affiliations"} Affiliations
+              = link_to "Affiliations", affiliations_about_index_path
             %li
-              %a{:href => "partners"} Partners
+              = link_to "Partners", partners_about_index_path
             %li
-              %a{:href => "testimonials"} Testimonials
+              = link_to "Testimonials", testimonials_about_index_path
             %li
-              %a{:href => "news-and-media"} News & Media
+              = link_to "Blog", blog_about_index_path
             %li
-              %a{:href => "blog"} Blog
-            %li
-              %a{:href => "faqs"} FAQ's
+              = link_to "FAQ's", faqs_about_index_path
         %li
-          %a{:href => "#!"} Why Spray Foam?
+          = link_to "Spray Foam", spray_foam_index_path
           %ul.nav-dropdown
             %li
-              %a{:href => "spray-foam"} Spray Foam
+              = link_to "Why Spray Foam?", why_spray_foam_spray_foam_index_path
             %li
-              %a{:href => "health-and-safety"} Health & Safety
+              = link_to "Health & Safety", health_and_safety_spray_foam_index_path
             %li
-              %a{:href => "moisture-control"} Moisture Control
+              = link_to "Moisture Control", moisture_control_spray_foam_index_path
             %li
-              %a{:href => "energuide-ratings"} Energuide Ratings
+              = link_to "Energuide Ratings", energuide_ratings_spray_foam_index_path
             %li
-              %a{:href => "open-or-closed-cell"} Open or Closed Cell
+              = link_to "Open or Closed Cell", open_or_closed_cell_spray_foam_index_path
             %li
-              %a{:href => "home-insulation-guide"} Home Insulation Guide
+              = link_to "Home Insulation Guide", home_insulation_guide_spray_foam_index_path
             %li
-              %a{:href => "ontario-cap-and-trade"} Ontario's Cap & Trade
+              = link_to "Spray Foam vs Traditional", spray_foam_vs_traditional_spray_foam_index_path
             %li
-              %a{:href => "spray-foam-vs-traditional"} Spray Foam vs Traditional
-            %li
-              %a{:href => "energy-efficiency-and-savings"} Energy Efficiency & Savings
+              = link_to "Energy Efficiency & Savings", energy_efficiency_and_savings_spray_foam_index_path
         %li
-          %a{:href => "#"} Services
+          = link_to "Services", services_path
           %ul.nav-dropdown
             %li
-              %a{:href => "spray-foam-insulation"} Spray Foam Insulation
+              = link_to "Spray Foam Insulation", spray_foam_insulation_services_path
             %li
-              %a{:href => "ceiling-insulation"} Ceiling & Attic Insulation
+              = link_to "Ceiling & Attic Insulation", ceiling_and_attic_insulation_services_path
             %li
-              %a{:href => "walls-insulation"} Walls Insulation
+              = link_to "Walls Insulation", walls_insulation_services_path
             %li
-              %a{:href => "basement-insulation"} Basement Insulation
+              = link_to "Basement Insulation", basement_insulation_services_path
         %li
-          %a{:href => "reviews"} Reviews
+          = link_to "Reviews", reviews_path
         %li
-          %a{:href => "gallery"} Gallery
+          = link_to "Gallery", gallery_index_path
         %li
           = link_to "Contact Us", contact_us_home_index_path
         %li

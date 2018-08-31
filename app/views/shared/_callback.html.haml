@@ -22,26 +22,41 @@
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 
-
-
       .col-md-5.col-sm-6.col-12.pt-10.offset-md-1
         / Callback Block Start
         .contact-form-md.white-background.shadow-light.center-holder
           %h5
             %b
               Request a callback
-          / Form Start
-          %form.mt-20
+          -# Rails Form
+          = render 'shared/flash'
+          #callbackmessage
+          = simple_form_for CallBack.new, :html => {:class => 'mt-20', remote: true } do |f|
             .row.pl-10.pr-10
               .col-md-6.col-sm-6.col-12
-                %input{:name => "name", :placeholder => "* Name", :type => "text"}/
+                = f.input :name, :required => true, :placeholder => "Name *", :label => false
               .col-md-6.col-sm-6.col-12
-                %input{:name => "phone", :placeholder => "* Phone Number", :type => "phone"}/
+                = f.input :number, :required => true, :placeholder => "Phone Number *", :label => false
               .col-md-12.col-sm-12.col-12
-                %input{:name => "email", :placeholder => "* E-mail", :type => "email"}/
+                = f.input :email, :required => true, :placeholder => "Email *", :label => false
+              .col-md-12.col-sm-12.col-12
+                .hidden
+                  = f.input :nickname, :hint => 'Leave this field blank!'
               .col-md-12.pt-10
-                %button.button-sm.primary-button.semi-rounded.full-width{:type => "submit"}
-                  Send Callback Request
-          / Form End
+                = f.button :submit, 'Send Message', :class=> "button-sm primary-button semi-rounded full-width", :label => false
+
+          -# / Form Start
+          -# %form.mt-20
+          -#   .row.pl-10.pr-10
+          -#     .col-md-6.col-sm-6.col-12
+          -#       %input{:name => "name", :placeholder => "* Name", :type => "text"}/
+          -#     .col-md-6.col-sm-6.col-12
+          -#       %input{:name => "phone", :placeholder => "* Phone Number", :type => "phone"}/
+          -#     .col-md-12.col-sm-12.col-12
+          -#       %input{:name => "email", :placeholder => "* E-mail", :type => "email"}/
+          -#     .col-md-12.pt-10
+          -#       %button.button-sm.primary-button.semi-rounded.full-width{:type => "submit"}
+          -#         Send Callback Request
+          -# / Form End
         / Callback Block End
 / Callback Section END

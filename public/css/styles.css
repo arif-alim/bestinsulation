@@ -14182,3 +14182,10 @@ padding-left: 10px;
   color: white;
   font-size: 20px;
 } */
+
+
+.gritter-notice-wrapper {
+  top: 200px !important;
+  background-color: yellow;
+  color:black;
+}

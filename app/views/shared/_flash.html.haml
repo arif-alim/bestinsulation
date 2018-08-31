@@ -1,0 +1,15 @@
+:css
+  .alert-secondary {
+    font-size: 14px;
+    text-align: center;
+    background-color: #E8CF49;
+    border: none;
+    margin-top: 30px;
+  }
+
+- flash.each do |key, value|
+  %div{class: key}
+    .alert.alert-secondary.alert-dismissible
+      %button.close{"data-dismiss" => "alert", :type => "button"} ×
+      %strong
+        = value

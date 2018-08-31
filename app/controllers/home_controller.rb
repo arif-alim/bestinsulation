@@ -1,9 +1,16 @@
 class HomeController < ApplicationController
-  # def index
-  #   page = params[:page]
-  #   render page
-  # end
+
+  def index
+  end
+
+  def reviews
+  end
+
+  def gallery
+  end
+
   def contact_us
     @contact = Contact.new
   end
+
 end

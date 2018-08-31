@@ -1,0 +1,2 @@
+module SprayFoamHelper
+end
