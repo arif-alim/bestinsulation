@@ -29,7 +29,6 @@
             %b
               Request a callback
           -# Rails Form
-          = render 'shared/flash'
           #callbackmessage
           = simple_form_for CallBack.new, :html => {:class => 'mt-20', remote: true } do |f|
             .row.pl-10.pr-10

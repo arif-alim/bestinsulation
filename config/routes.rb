@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :gallery, only: [:index]
-  resources :reviews, only: [:index]
-  resources :contacts, only: [:new, :create]
-  resources :call_backs, only: [:new, :create]
+  resources :gallery, only: :index
+  resources :reviews, only: :index
+  resources :contacts, only: :create
+  resources :call_backs, only: :create
+  resources :quotes, only: :create
   resources :home, only: [:index] do
     collection do
       get :contact_us

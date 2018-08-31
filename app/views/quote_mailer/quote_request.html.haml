@@ -1,0 +1,31 @@
+%p
+  = image_tag("http://web-ebt.herokuapp.com/assets/img/logo/logo.png", alt: "logo", style: "width: 368px;")
+%h2
+  %strong Contact us request from Best Insulation Website
+%h3
+  %b Name
+%p{:style => "font-size:14px"}= @quote.name
+%h3
+  %b Phone Number
+%p{:style => "font-size:14px"}= @quote.number
+%h3
+  %b Email
+%p{:style => "font-size:14px"}= @quote.email
+%h3
+  %b Property Address
+%p{:style => "font-size:14px"}= @quote.address
+%h3
+  %b City
+%p{:style => "font-size:14px"}= @quote.city
+%h3
+  %b Postal Code
+%p{:style => "font-size:14px"}= @quote.postal
+%h3
+  %b Service Area
+%p{:style => "font-size:14px"}= @quote.servicearea
+%h3
+  %b Approximate Sqft
+%p{:style => "font-size:14px"}= @quote.sqft
+%h3
+  %b Description
+%p{:style => "font-size:14px"}= @quote.description
