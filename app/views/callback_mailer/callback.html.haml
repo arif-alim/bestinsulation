@@ -1,20 +1,12 @@
-
-
 = image_tag("http://web-bi.herokuapp.com/img/email/black_logo_transparent.png", alt: "Best Inuslation Logo", style: "width: 404px")
 %h1
-  %strong Contact Us Request from Website
-%h2
-  %b
-    Client Name:
-  %span
-    %b= @callback.name
-%h2
-  %b
-    Client Phone Number:
-  %span
-    %b= @callback.number
-%h2
-  %b
-    CLient Email:
-  %span
-    %b= @callback.email
+  %strong Callback request from website
+%h3
+  %b Client's Name:
+%p{:style => "font-size:14px"}= @callback.name
+%h3
+  %b Client's Phone Number:
+%p{:style => "font-size:14px"}= @callback.number
+%h3
+  %b Client's Email Address:
+%p{:style => "font-size:14px"}= @callback.email
