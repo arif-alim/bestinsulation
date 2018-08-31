@@ -2288,8 +2288,8 @@ i) Forms
     border: none;
     outline: 0;
     /* background: #F6F6F6; */
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 12.5px;
+    font-weight: 500;
     width: 100%;
     margin-bottom: 17px;
     padding: 12px 16px;
@@ -5094,8 +5094,8 @@ Style 1
 	border-radius: 5px;
 	border: none;
 	background: #f4f4f4;
-	font-size: 13px;
-	font-weight: 600;
+	font-size: 12.5px;
+	font-weight: 500;
 	width: 100%;
 	padding: 12px 16px;
 	margin: 10px 0px;
@@ -10284,7 +10284,7 @@ Shop Product Review Form
 
 .flipcard .front{
 	width: 100%;
-	height: 350px;
+	height: 250px;
 	position: absolute;
 	transform: perspective( 600px ) rotateY( 0deg );
 	background: #222;
@@ -10300,9 +10300,9 @@ Shop Product Review Form
 }
 .flipcard > .back{
 	width: 100%;
-	height: 350px;
+	height: 250px;
 	position:relative;
-	padding: 60px 20px;
+	padding: 60px 5px;
 	transform: perspective( 600px ) rotateY( 180deg );
 	background: #E8CF49;
 	backface-visibility: hidden;
@@ -10320,7 +10320,7 @@ Shop Product Review Form
 }
 
 
-.flipcard .front h2{
+/* .flipcard .front h2{
 	color: #fff;
     position: absolute;
     width: 100%;
@@ -10338,24 +10338,24 @@ Shop Product Review Form
     text-align: center;
     -webkit-transform: translate3d(0,-50%,50px);
     transform: translate3d(0,-50%,50px);
-}
+} */
 
-.flipcard .front h2:after{
+/* .flipcard .front h2:after{
 	content: "";
 	display: block;
 	width: 100px;
 	height: 3px;
 	background: rgba(255, 255, 255, .5);
 	margin: 18px auto;
-}
+} */
 
 .flipcard .back h2{
 	color: #fff;
     width: 100%;
     display: block;
-    font-size: 28px;
+    font-size: 18px;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10px;
     backface-visibility: hidden;
     -webkit-transform: translate3d(0,-50%,50px);
     transform: translate3d(0,-50%,50px);
@@ -10366,8 +10366,10 @@ Shop Product Review Form
     width: 100%;
     display: block;
     text-align: center;
-    line-height: 1.7;
-    padding-top: 0px;
+    line-height: 1.5;
+    padding-top: 160px;
+    font-size: 16px;
+    font-weight: 600;
     backface-visibility: hidden;
     -webkit-transform: translate3d(0,-60%,50px) scale(.8);
     transform: translate3d(0,-60%,50px) scale(.8);
@@ -10433,7 +10435,7 @@ Shop Product Review Form
 }
 
 .modal-heading{
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 }
 
 .modal-heading h2{
@@ -10452,7 +10454,7 @@ Shop Product Review Form
 
 .modal-heading h4{
 	font-size: 25px;
-	color: #222;
+	color: #ffffff;
 	font-weight: 500;
 	line-height: 1.5;
 }
@@ -10508,9 +10510,9 @@ Shop Product Review Form
 }
 
 .modal-inside p {
-    font-size: 15px;
-    color: #999;
-    line-height: 1.7;
+    font-size: 14px;
+    color: #E8CF49;
+    line-height: 1.5;
     font-weight: 400;
 }
 

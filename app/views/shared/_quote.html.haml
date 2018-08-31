@@ -16,7 +16,8 @@
         .modal-heading
           %h4.bold
             Let's Discuss Your Project
-          %p{:style => "font-weight: 600; color: #333; font-size: 13px"}
+        .modal-inside
+          %p
             If you have any questions, please give us a call!
         #quotemessage
         = simple_form_for Quote.new, :html => {:class => 'primary-form mt-30', remote: true } do |f|
@@ -34,13 +35,13 @@
             .col-md-6.col-sm-6.col-12
               = f.input :postal, :required => true, :placeholder => "Postal Code *", :label => false
             .col-md-6.col-sm-6.col-12
-              = f.input :servicearea, :required => true, :placeholder => "Service Area *", :label => false
+              = f.input :servicearea, :required => true, :placeholder => "Service Areas (walls, basement, etc.) *", :label => false
             .col-md-6.col-sm-6.col-12
               = f.input :sqft, :required => true, :placeholder => "Approximate Sqft *", :label => false
             .col-md-12
               = f.input :description, as: :text, :required => true, :placeholder => "Project Description *", :label => false
             .col-md-12
-              = f.button :submit, 'Request A Quote', :class=> "button-sm primary-button semi-rounded full-width", :label => false
+              = f.button :submit, 'Request A Quote', :class=> "button-sm primary-button semi-rounded full-width", :label => false, style: "font-size:13.5px; font-weight: 900; letter-spacing: -0.3px"
 
 
         -# %form.primary-form.mt-30
