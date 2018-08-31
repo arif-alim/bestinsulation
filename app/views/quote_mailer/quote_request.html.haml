@@ -1,31 +1,33 @@
-%p
-  = image_tag("http://web-ebt.herokuapp.com/assets/img/logo/logo.png", alt: "logo", style: "width: 368px;")
-%h2
-  %strong Contact us request from Best Insulation Website
+:css
+  h2 {font-s}
+
+= image_tag("http://web-bi.herokuapp.com/img/email/black_logo_transparent.png", alt: "Best Inuslation Logo", style: "width: 404px")
+%h1
+  %strong Contact Us Request from Website
 %h3
-  %b Name
+  %b Client Name:
 %p{:style => "font-size:14px"}= @quote.name
 %h3
-  %b Phone Number
+  %b Client Phone Number:
 %p{:style => "font-size:14px"}= @quote.number
 %h3
-  %b Email
+  %b Client Email:
 %p{:style => "font-size:14px"}= @quote.email
 %h3
-  %b Property Address
+  %b Property Address:
 %p{:style => "font-size:14px"}= @quote.address
 %h3
-  %b City
+  %b City:
 %p{:style => "font-size:14px"}= @quote.city
 %h3
-  %b Postal Code
+  %b Postal Code:
 %p{:style => "font-size:14px"}= @quote.postal
 %h3
-  %b Service Area
+  %b Service Area:
 %p{:style => "font-size:14px"}= @quote.servicearea
 %h3
-  %b Approximate Sqft
+  %b Approximate Sqft:
 %p{:style => "font-size:14px"}= @quote.sqft
 %h3
-  %b Description
+  %b Description:
 %p{:style => "font-size:14px"}= @quote.description

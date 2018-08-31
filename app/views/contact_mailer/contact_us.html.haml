@@ -1,19 +1,20 @@
-%p
-  = image_tag("http://web-ebt.herokuapp.com/assets/img/logo/logo.png", alt: "logo", style: "width: 368px;")
-%h2
-  %strong Contact us request from Equity Website
+
+
+= image_tag("http://web-bi.herokuapp.com/img/email/black_logo_transparent.png", alt: "Best Inuslation Logo", style: "width: 404px")
+%h1
+  %strong Contact Us Request from Website
 %h3
-  %b Name
+  %b Client's Name:
 %p{:style => "font-size:14px"}= @contact.name
 %h3
-  %b Phone Number
+  %b Client's Phone Number:
 %p{:style => "font-size:14px"}= @contact.number
 %h3
-  %b Email
+  %b Client's Email Address:
 %p{:style => "font-size:14px"}= @contact.email
 %h3
-  %b Subject
+  %b Subject:
 %p{:style => "font-size:14px"}= @contact.subject
 %h3
-  %b Message
+  %b Message:
 %p{:style => "font-size:14px"}= @contact.message

@@ -1,13 +1,20 @@
-%p
-  = image_tag("http://web-ebt.herokuapp.com/assets/img/logo/logo.png", alt: "logo", style: "width: 368px;")
+
+
+= image_tag("http://web-bi.herokuapp.com/img/email/black_logo_transparent.png", alt: "Best Inuslation Logo", style: "width: 404px")
+%h1
+  %strong Contact Us Request from Website
 %h2
-  %strong Callback Request from Best Insulation Website
-%h3
-  %b Name
-%p{:style => "font-size:14px"}= @callback.name
-%h3
-  %b Phone Number
-%p{:style => "font-size:14px"}= @callback.number
-%h3
-  %b Email
-%p{:style => "font-size:14px"}= @callback.email
+  %b
+    Client Name:
+  %span
+    %b= @callback.name
+%h2
+  %b
+    Client Phone Number:
+  %span
+    %b= @callback.number
+%h2
+  %b
+    CLient Email:
+  %span
+    %b= @callback.email
