@@ -1,6 +1,6 @@
 class CallBacksController < ApplicationController
   def create
-    @callback = CallBack.new(params[:callback])
+    @callback = CallBack.new(params[:call_back])
     if CallbackMailer.callback_request(@callback).deliver
       flash[:success] = "Thank you, we'll be calling you shortly."
     else

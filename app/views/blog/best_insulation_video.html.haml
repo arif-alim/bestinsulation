@@ -1,0 +1,43 @@
+:css
+  .blog-post h4 {font-weight: 700}
+  .blog-post p {font-weight: 600; font-size: 14px; color: #666}
+  .blog-post ul li {color: #999; font-size: 13px; font-weight: 600}
+/ Page Title START
+.page-title.jarallax.black-overlay-30{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('/img/about/banner.jpg');"}
+  .container
+    %h1 Promotional Video
+    %ul
+      %li
+        = link_to "About Us", about_index_path
+      %li
+        = link_to "Blog", blog_about_index_path
+      %li
+        Best Insulation's Promo Video
+
+
+
+/ Blog Post START
+.section-block.pb-0
+  .container
+    .row
+      / Left Side START
+      .col-md-10.col-sm-12.col-12.offset-md-1
+        .blog-post.text-center
+          .video-video-box.full-width.mb-20
+            %img.rounded-border{:alt => "Best Insulation youtube video", :src => "/img/blog/video-post.jpg"}/
+            .video-video-box-overlay
+              .video-video-box-button-sm
+                %button.video-video-play-icon{"data-izimodal-open" => "#video1"}
+                  %i.fa.fa-play
+          / Modal Start
+          #video1.izimodal{"data-izimodal-fullscreen" => "true", "data-izimodal-width" => "800px"}
+            %iframe.full-width.shadow-primary{:height => "415", :src => "https://www.youtube.com/embed/kpTF8mSCmwg"}
+          / Modal End
+          %h4
+            Best Insulation's Promotional Video
+          %ul.blog-post-info
+            %li
+              %i.far.fa-calendar-alt
+              %span August 31, 2018
+          %p
+            We are super excited to launch our new promotional video. Best Insulation offers free consultations to help clients decide which insulation product is the best solution. We are capable of servicing the smallest local contracts to the largest residential jobs throughout the Greater Toronto Area. Best Insulation is a family run company that prides itself on high knowledge on its products and craftsmanship. A owner is always on site during installation and we are available to you 24/7.

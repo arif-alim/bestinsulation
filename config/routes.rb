@@ -41,6 +41,12 @@ Rails.application.routes.draw do
       get :basement_insulation
     end
   end
+  resources :blog, only: [:index] do
+    collection do
+      get :best_insulation_video
+      get :new_website
+    end
+  end
   root to: 'home#index'
   # get '/:page' => 'home#index'
 end

@@ -1,11 +1,86 @@
+:css
+  .blog-grid-text h4 {font-weight: 700}
+  .blog-grid-text p {font-weight: 600; font-size: 14px; color: #666}
+  .blog-grid-text ul li {color: #999; font-size: 13px; font-weight: 600}
 / Page Title START
 .page-title.jarallax.black-overlay-30{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('/img/about/banner.jpg');"}
   .container
-    %h1 Additional Pages
+    %h1 Our Blog
     %ul
       %li
-        %a{:href => "/"} Home
+        = link_to "About Us", about_index_path
       %li
-        %a{:href => "#!"} About Us
-      %li
-        Page Example
+        Blog
+/ Blog Grid 2 Column Section START
+.section-block
+  .container
+    .row
+      .col-md-10.col-sm-12.col-12.offset-md-1
+        .row.mt--15
+          .col-md-6.col-sm-6.col-12
+            .blog-grid-2
+              .blog-grid-img
+                %img{:alt => "Website front page", :src => "/img/blog/website.jpg"}/
+              .blog-grid-text
+                %h4
+                  We Just Launched Our New Website
+                %ul
+                  %li
+                    %i.fa.fa-calendar>
+                    August 31st, 2018
+                %p
+                  We have been deligently working on providing our clients with a new dynamic website with an appealing interface yet informative. We focused on user experience, and our...
+                .blog-grid-2-button.left-holder
+                  %a{href: new_website_blog_index_path}
+                    Continue Reading
+                    %i.fa.fa-chevron-right
+          .col-md-6.col-sm-6.col-12
+            .blog-grid-2
+              .blog-grid-img
+                %img{:alt => "Best Insulation Video Image", :src => "/img/blog/video.jpg"}/
+              .blog-grid-text
+                %h4
+                  Best Insulation Promo Video
+                %ul
+                  %li
+                    %i.fa.fa-calendar>
+                    August 21st, 2018
+                %p
+                  The promo video came out better than we had expected and that's all thanks to the team that made it happen. We are looking forward to showcasing it on digital ads...
+                .blog-grid-2-button.left-holder
+                  %a{href: best_insulation_video_blog_index_path}
+                    Continue Reading
+                    %i.fa.fa-chevron-right
+          .col-md-6.col-sm-6.col-12
+            .blog-grid-2
+              .blog-grid-img
+                %img{:alt => "Choose the right insultion", :src => "/img/blog/insulation.jpg"}/
+              .blog-grid-text
+                %h4
+                  Renovating? Choose the Right Insulation
+                %ul
+                  %li
+                    %i.fa.fa-calendar>
+                    April 17, 2018
+                %p
+                  Renovation time is probably the best time of all to upgrade and retrofit your insulation. Beyond the budget considerations, the next most important thing is to...
+                .blog-grid-2-button.left-holder
+                  %a{:href => "#"}
+                    Continue Reading
+                    %i.fa.fa-chevron-right
+          .col-md-6.col-sm-6.col-12
+            .blog-grid-2
+              .blog-grid-img
+                %img{:alt => "ceiling insulation", :src => "/img/blog/ceiling.jpg"}/
+              .blog-grid-text
+                %h4 Attic Insulation for Better Ventilation
+                %ul
+                  %li
+                    %i.fa.fa-calendar>
+                    April 17, 2018
+                %p
+                  A good contractor will tell you right off the bat that the best approach to a comfortable home starts in the attic. The space needs to be well sealed, well insulated, and well...
+                .blog-grid-2-button.left-holder
+                  %a{:href => "#"}
+                    Continue Reading
+                    %i.fa.fa-chevron-right

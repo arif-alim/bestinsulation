@@ -2,11 +2,16 @@
   .card-body.card-body-grey p {
     margin-bottom: 15px;
   }
+  h5 {font-weight: 700}
 / Page Title START
-.page-title.jarallax.black-overlay-50{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('/img/about/faqs/banner.jpg');"}
+.page-title.jarallax.black-overlay-30{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('/img/about/banner.jpg');"}
   .container
-    %h1 FAQ's
-/ Page Title END
+    %h1 Frequently Asked Questions
+    %ul
+      %li
+        = link_to "About Us", about_index_path
+      %li
+        FAQ's
 / Info Section START
 .section-block.section-sm
   .container
@@ -37,6 +42,74 @@
                   Many homeowners are puzzled about which insulation to install, and particularly if spray foam is the best way to go. True, there are number of product options to choose from, but more and more professionals are recommending spray foam as the install that delivers the best results. Spray Polyurethane Foam has proven itself, time after time, to do more and perform far better than any of the comparable products that are advertised and marketed today.
                 %p
                   Professionally installed, spray foam provides optimal energy efficiency by protecting a home (the building envelope) against heat loss. It means that indoor heat during wintertime will not leak out. And it means that outdoor heat during summer will not creep in. The result: heating and cooling equipment have to work less, and energy consumption is reduced from season to season. A good spray foam installation will save substantial dollars annually.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr5.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr5", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr5"}
+                  What is the best type of insulation to use in a basement?
+            #collapsegr5.collapse{"aria-labelledby" => "headinggr5", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  We recommend spray foam, as it adheres to almost any clean, dry, surface it is sprayed to. Spray foam is recognized as an air and vapour barrier after 2-inches thick (50mm). If your studs are off the foundation wall the spray foam will expand in behind the studs making this application virtually seamless, making heating and cooling this area much more efficient.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr5.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr5", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr6"}
+                  What is the best insulation for flat attics?
+            #collapsegr6.collapse{"aria-labelledby" => "headinggr5", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  Our answer is always spray foam, but blown insulation in very cost effective for flat attic areas as well and is the most common product used.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr5.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr5", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr7"}
+                  Can I insulate existing walls in my older home?
+            #collapsegr7.collapse{"aria-labelledby" => "headinggr5", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  Depending on the wall make up, we have 2 different applications we can do to improve the insulation in the exterior walls. Every situation is unique as far as wall make up, what is in the wall, how deep is the cavity etc. We always come out and provide a free onsite estimate for this type of work.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr5.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr5", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr8"}
+                  Why are the floors on my main level cold?
+            #collapsegr8.collapse{"aria-labelledby" => "headinggr5", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  There are a couple of reasons or situations that may cause cold floors. If there is a crawlspace or basement under this area that is lacking in insulation this may be the problem. There may be lack of insulation in the ring joist or the main floor walls as well.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr5.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr5", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr9"}
+                  How do I properly insulate my crawlspace?
+            #collapsegr9.collapse{"aria-labelledby" => "headinggr5", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  If you have a heat source in the crawlspace we would put a 6-mil vapour barrier on the dirt or gravel floor and spray foam from the floor above, down all outside walls, sealing to the 6-mil vapour barrier.
+                %p
+                  If there is no heat source in the crawlspace and one cannot be added cost effectively, then spraying 5-inches or more of spray foam on the underside of the floor would be the alternative.
+          / Accordion End
+          / Accordion Start
+          .card.card-grey
+            #headinggr5.card-header.card-header-grey{:role => "tab"}
+              %h5.mb-0
+                %a.collapsed{"aria-controls" => "collapsegr5", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr10"}
+                  What are some benefits of spray foam?
+            #collapsegr10.collapse{"aria-labelledby" => "headinggr5", "data-parent" => "#accordion3", :role => "tabpanel"}
+              .card-body.card-body-grey
+                %p
+                  It’s a question that is asked by homeowners, homebuilders, and contractors alike. And for Best Insulation, the answer is usually the same for all - spray foam has proven to be the very best approach to insulation, as part of the overall “insulation system” that’s installed.
           / Accordion End
           / Accordion Start
           .card.card-grey
@@ -75,17 +148,12 @@
           .card.card-grey
             #headinggr5.card-header.card-header-grey{:role => "tab"}
               %h5.mb-0
-                %a.collapsed{"aria-controls" => "collapsegr5", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr5"}
-                  05. Where can I find market research reports ?
-            #collapsegr5.collapse{"aria-labelledby" => "headinggr5", "data-parent" => "#accordion3", :role => "tabpanel"}
+                %a.collapsed{"aria-controls" => "collapsegr5", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#collapsegr11"}
+                  How do I stop air leakage?
+            #collapsegr11.collapse{"aria-labelledby" => "headinggr5", "data-parent" => "#accordion3", :role => "tabpanel"}
               .card-body.card-body-grey
                 %p
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Air leakage can occur in many forms, from window and door leaks, to poor insulation in the attic and roof. The result is wasted energy throughout the year, and that’s simply wasted money on winter heating and summer cooling. Anything that can be done to remedy air leakage is a good investment, and at Best Insulation, identifying the source is always step one. Indeed, detecting the source and extent of air leakage will set the stage for appropriate remedies.
           / Accordion End
         / Accordions End
 / FAQ Section END
