@@ -7,82 +7,92 @@
         %a{href: about_index_path} About Us
       %li
         Partners
-.section-block.pt-50.pb-10
+.section-block-grey
   .container
     .row
-      .col-md-8.col-sm-12.col-12.offset-md-2
-        .section-heading.center-holder
-          %h2.bold
-            Best
-            %span.primary-color
-              Insulation
-            Affiliations
-          -# .section-heading-line
-        .text-content-small.center-holder
-          %p
-            We are proud to say that we are affiliated with the following companies and organizations.
-    -# Affiliations
-    .row.margin-30px-bottom
-      .col-md-3.col-sm-12.col-12
-        .flipcard
-          .front{:style => "background-image: url(/img/affiliations/lowes.jpg);"}
-          .back
-            %h2 Responsive Layout
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-      .col-md-3.col-sm-12.col-12
-        .flipcard
-          .front{:style => "background-image: url(/img/affiliations/insulthane.jpg);"}
-          .back
-            %h2 Responsive Layout
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-      .col-md-3.col-sm-12.col-12
-        .flipcard
-          .front{:style => "background-image: url(/img/affiliations/enbridge.jpg);"}
-          .back
-            %h2 Responsive Layout
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-      .col-md-3.col-sm-12.col-12
-        .flipcard
-          .front{:style => "background-image: url(/img/affiliations/bbb.jpg);"}
-          .back
-            %h2 Responsive Layout
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-      .col-md-3.col-sm-12.col-12
-        .flipcard
-          .front{:style => "background-image: url(/img/affiliations/aftec.jpg);"}
-          .back
-            %h2
-              Aftec Inc.
-            %p
-              AFTEC Corporate Design & Services is a general contracting company rendering services to comercial, industrial companies
-      .col-md-3.col-sm-12.col-12
-        .flipcard
-          .front{:style => "background-image: url(/img/affiliations/opem.jpg);"}
-          .back
-            %h2 OPEM
-            %p
-              OPEM - On Point Energy Management is a full-service energy management firm committed to our sustainable future
-      .col-md-3.col-sm-12.col-12
-        .flipcard
-          .front{:style => "background-image: url(/img/affiliations/lmc.jpg);"}
-          .back
-            %h2 Lieber Mechanical
-            %p{style:"padding-top:230px"}
-              Commercial construction service company that offers quality mechanical, maintenance and repair services to high-rise buildings and manufacturing facilities
-      .col-md-3.col-sm-12.col-12
-        .flipcard
-          .front{:style => "background-image: url(/img/affiliations/3m.jpg);"}
-          .back
-            %h2 Responsive Layout
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-/ Affiliation boxes
+      .team-block
+        .row
+          .col-lg-4.col-md-4.col-sm-12.col-12
+            .team-block-img
+              %img{:alt => "Chicasa Design Logo", :src => "/img/partners/chicasa.jpg"}/
+          .col-lg-8.col-md-8.col-sm-12.col-12
+            .team-block-text
+              %h2
+                %a{:href => "#"}
+                  Chicasa Design
+              %h6.italic.libre-baskerville
+                Custom Home Builders & Renovations
+              %p
+                You deserve a home that is custom built to accentuate your personality. We are here to fulfill that desire, we are here to build you a chic-casa. We know home renovations can be exciting. We also know that with excitement expectations should be met, because we are just as excited as you.
+              %p
+                Our team means the world to us, and we have spent years carefully selecting the very best people n their field so that we can provide you with everything from design ideas, to structural and architectural inspiration, and also utilize our network of supplier relationships so that we can provide you with the very best materials for your new home, at a far lower rate than other builders.
+              %ul
+                %li
+                  %a{:href => "http://www.chicasadesign.com/", target: "_blank"}
+                    %i.fas.fa-globe{style: "font-size:18px"}
+                %li
+                  %a{:href => "https://www.facebook.com/Chicasa-Design-2313962795311333/", target: "_blank"}
+                    %i.fab.fa-facebook-f{style: "font-size:18px"}
+                %li
+                  %a{:href => "https://twitter.com/ChicasaDesign", target: "_blank"}
+                    %i.fab.fa-twitter{style: "font-size:18px"}
+                %li
+                  %a{:href => "https://www.instagram.com/chicasa_design/", target: "_blank"}
+                    %i.fab.fa-instagram{style: "font-size:18px"}
+                %li
+                  %a{:href => "https://www.pinterest.ca/chicasadesign/", target: "_blank"}
+                    %i.fab.fa-pinterest{style: "font-size:18px"}
+                %li
+                  %a{:href => "https://plus.google.com/u/2/108365886298032103074", target: "_blank"}
+                    %i.fab.fa-google{style: "font-size:18px"}
+      .team-block
+        .row
+          .col-lg-4.col-md-4.col-sm-12.col-12
+            .team-block-img
+              %img{:alt => "Chicasa Design Logo", :src => "/img/partners/opem.jpg"}/
+          .col-lg-8.col-md-8.col-sm-12.col-12
+            .team-block-text
+              %h2
+                %a{:href => "#"}
+                  OPEM
+              %h6.italic.libre-baskerville
+                On Point Energy Management
+              %p
+                We help maximize your energy savings and obtain available rebates upon completion of an audit.
+              %p
+                OPEM is a full-service energy management firm committed to our sustainable future. We address volatile energy markets and achieve energy efficiency for buildings. Our aim is to help you reduce your building’s operating costs and environmental impact.
+              %p
+                Working in the mechanical and electrical design and construction industry since 1987 has enabled us to recognize any building’s energy savings potential. We extend our services to commercial, institutional, high-rise residential, industrial and retail properties.
+
+      .team-block
+        .row
+          .col-lg-4.col-md-4.col-sm-12.col-12
+            .team-block-img
+              %img{:alt => "Chicasa Design Logo", :src => "/img/partners/lmc.jpg"}/
+          .col-lg-8.col-md-8.col-sm-12.col-12
+            .team-block-text
+              %h2
+                %a{:href => "#"}
+                  Lieber Mechanical
+              %h6.italic.libre-baskerville
+                Commercial Mechanical Contracting Services
+              %p
+                Founded in 2007, LMC is a fully integrated in-house mechanical constructing and service providing company that offers quality mechanical, maintenance and repair services to high-rise buildings and manufacturing facilities. We serve North American clients in the commercial, industrial, institutional and high-rise residential segments. We have conducted projects of scales as large as wholebuilding mechanical system reconstructions to as small as replacing kitchen sink faucets. We take our work seriously and are proud of our longstanding relationships with our clients.
+              %p
+                With the help of the latest design and management software, we ensure that our clients, engineers and consultants receive a reliable assessment of project schedules and budgets. Additionally, we maintain a large inventory of plumbing and HVAC materials for emergency service calls, quick job start-ups, and to handle unexpected changes and repairs. Our project managers, engineers and fully licensed technicians work in unison to ensure all projects are handled with utmost care, responsibility and performed as per building codes.
+      .team-block
+        .row
+          .col-lg-4.col-md-4.col-sm-12.col-12
+            .team-block-img
+              %img{:alt => "Chicasa Design Logo", :src => "/img/partners/aftec.jpg"}/
+          .col-lg-8.col-md-8.col-sm-12.col-12
+            .team-block-text
+              %h2
+                %a{:href => "#"}
+                  Aftec Services
+              %h6.italic.libre-baskerville
+                Commercial Constrution Solutions
+              %p
+                AFTEC Corporate Design & Services is a general contracting company rendering services to comercial, industrial companies. Our success as well as the success of individual employees and partners can be traced to embracing and applying the values of honesty, integrity and hard work. We have excellent workmanship and produce high quality results. Our services range from roofing to telecommunications which we take pride in. Our large clientele include Rio Can properties throughout Ontario, the Ontario Energy Board and various large and small companies such as clinics, hospitals, restaurants and retail stores.
+              %p
+                We work closely with our engineers to ensure correct analysis of the job site, implement the most appropriate, cost-effective and safe work, and provide well-trained workers appropriate for the work type.

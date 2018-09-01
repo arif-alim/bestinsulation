@@ -17,7 +17,6 @@ Rails.application.routes.draw do
       get :sustainability
       get :affiliations
       get :partners
-      get :testimonials
       get :blog
       get :faqs
     end

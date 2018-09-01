@@ -18,9 +18,6 @@ class AboutController < ApplicationController
   def partners
   end
 
-  def testimonials
-  end
-
   def blog
   end
 
