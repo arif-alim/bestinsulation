@@ -6,11 +6,9 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     if ContactMailer.contact_us(@contact).deliver
-      flash[:success] = 'Thank you for your message. We will contact you shortly!'
-      # redirect_to contact_us_home_index_path
+      flash[:success] = "Thank you for contacting us, we'll get back to you shortly."
     else
-      flash[:error] = 'Cannot send message.'
-      # redirect_to contact_us_home_index_path
+      flash[:error] = "Sorry, something wen't wrong. Please refresh the page and try again."
     end
   end
 end

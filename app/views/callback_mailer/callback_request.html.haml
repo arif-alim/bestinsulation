@@ -1,0 +1,19 @@
+= image_tag("http://web-bi.herokuapp.com/img/email/black_logo_transparent.png", alt: "Best Inuslation Logo", style: "width: 483px")
+%h2
+  %strong
+    Callback Request from Best Insulation Website
+%h3
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Name:
+  %span
+    %strong= @callback.name
+%h3
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Email Address:
+  %span
+    %strong= @callback.number
+%h3
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Phone Number:
+  %span
+    %strong= @callback.email

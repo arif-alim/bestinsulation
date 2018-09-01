@@ -2289,7 +2289,7 @@ i) Forms
     outline: 0;
     /* background: #F6F6F6; */
     font-size: 12.5px;
-    font-weight: 500;
+    font-weight: 600;
     width: 100%;
     margin-bottom: 17px;
     padding: 12px 16px;
@@ -10454,7 +10454,7 @@ Shop Product Review Form
 
 .modal-heading h4{
 	font-size: 25px;
-	color: #ffffff;
+	color: #000000;
 	font-weight: 500;
 	line-height: 1.5;
 }
@@ -10511,7 +10511,7 @@ Shop Product Review Form
 
 .modal-inside p {
     font-size: 14px;
-    color: #E8CF49;
+    color: #555555;
     line-height: 1.5;
     font-weight: 400;
 }

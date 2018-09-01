@@ -28,25 +28,28 @@
 
       .col-md-5.col-sm-6.col-12.pt-10
         / Callback Block Start
-        .contact-form-md.white-background.shadow-light.center-holder
+        -# .contact-form-md.white-background.shadow-light.center-holder
+        -#   %h5
+        -#     %b
+        -#       Request a callback
+        = simple_form_for CallBack.new, :html => {:class => 'contact-form-md white-background shadow-light center-holder', remote: true } do |f|
           %h5
             %b
               Request a callback
-          -# Rails Form
+          .mt-20
           #callbackmessage
-          = simple_form_for CallBack.new, :html => {:class => 'mt-20', remote: true } do |f|
-            .row.pl-10.pr-10
-              .col-md-6.col-sm-6.col-12
-                = f.input :name, :required => true, :placeholder => "Name *", :label => false
-              .col-md-6.col-sm-6.col-12
-                = f.input :number, :required => true, :placeholder => "Phone Number *", :label => false
-              .col-md-12.col-sm-12.col-12
-                = f.input :email, :required => true, :placeholder => "Email *", :label => false
-              .col-md-12.col-sm-12.col-12
-                .hidden
-                  = f.input :nickname, :hint => 'Leave this field blank!'
-              .col-md-12.pt-10
-                = f.button :submit, 'Send Callback Request', :class=> "button-sm primary-button semi-rounded full-width", :label => false, style: "font-size:13.5px; font-weight: 900; letter-spacing: -0.3px; background-color: #E8CF49"
+          .row.pl-10.pr-10
+            .col-md-6.col-sm-6.col-12
+              = f.input :name, :required => true, :placeholder => "Name *", :label => false
+            .col-md-6.col-sm-6.col-12
+              = f.input :number, :required => true, :placeholder => "Phone Number *", :label => false
+            .col-md-12.col-sm-12.col-12
+              = f.input :email, :required => true, :placeholder => "Email *", :label => false
+            .col-md-12.col-sm-12.col-12
+              .hidden
+                = f.input :nickname, :hint => 'Leave this field blank!'
+            .col-md-12.pt-10
+              = f.button :submit, 'Request A Callback', :class=> "button-sm primary-button semi-rounded full-width", :label => false, style: "font-size:13.5px; font-weight: 900; letter-spacing: -0.3px;"
 
           -# / Form Start
           -# %form.mt-20
@@ -60,6 +63,6 @@
           -#     .col-md-12.pt-10
           -#       %button.button-sm.primary-button.semi-rounded.full-width{:type => "submit"}
           -#         Send Callback Request
-          -# / Form End
+          / Form End
         / Callback Block End
 / Callback Section END

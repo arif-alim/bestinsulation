@@ -1,12 +1,10 @@
 class CallBacksController < ApplicationController
   def create
     @callback = CallBack.new(params[:callback])
-    if CallbackMailer.callback(@callback).deliver
-      flash[:success] = 'Thank you for your message. We will contact you soon!'
-      # redirect_to home_index_path
+    if CallbackMailer.callback_request(@callback).deliver
+      flash[:success] = "Thank you, we'll be calling you shortly."
     else
-      flash[:error] = 'Cannot send message.'
-      # redirect_to home_index_path
+      flash[:error] = 'Please refresh your page and try again.'
     end
   end
 end

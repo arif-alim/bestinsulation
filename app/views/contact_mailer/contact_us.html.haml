@@ -1,20 +1,29 @@
-
-
-= image_tag("http://web-bi.herokuapp.com/img/email/black_logo_transparent.png", alt: "Best Inuslation Logo", style: "width: 404px")
-%h1
-  %strong Contact Us Request from Website
+= image_tag("http://web-bi.herokuapp.com/img/email/black_logo_transparent.png", alt: "Best Inuslation Logo", style: "width: 446px")
+%h2
+  %strong
+    Contact Us Request from Best Insulation Website
 %h3
-  %b Client's Name:
-%p{:style => "font-size:14px"}= @contact.name
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Name:
+  %span
+    %strong= @contact.name
 %h3
-  %b Client's Phone Number:
-%p{:style => "font-size:14px"}= @contact.number
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Phone Number:
+  %span
+    %strong= @contact.number
 %h3
-  %b Client's Email Address:
-%p{:style => "font-size:14px"}= @contact.email
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Email Address:
+  %span
+    %strong= @contact.email
 %h3
-  %b Subject:
-%p{:style => "font-size:14px"}= @contact.subject
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Subject:
+  %span
+    %strong= @contact.subject
 %h3
-  %b Message:
-%p{:style => "font-size:14px"}= @contact.message
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Message:
+  %span
+    %strong= @contact.message

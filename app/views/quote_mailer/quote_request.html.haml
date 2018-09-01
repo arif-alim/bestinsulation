@@ -1,33 +1,49 @@
-:css
-  h2 {font-s}
-
-= image_tag("http://web-bi.herokuapp.com/img/email/black_logo_transparent.png", alt: "Best Inuslation Logo", style: "width: 404px")
-%h1
-  %strong Contact Us Request from Website
+= image_tag("http://web-bi.herokuapp.com/img/email/black_logo_transparent.png", alt: "Best Inuslation Logo", style: "width: 412px")
+%h2
+  %strong
+    Quote Request from Best Insulation Website
 %h3
-  %b Client Name:
-%p{:style => "font-size:14px"}= @quote.name
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Name:
+  %span
+    %strong= @quote.name
 %h3
-  %b Client Phone Number:
-%p{:style => "font-size:14px"}= @quote.number
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Phone Number:
+  %span
+    %strong= @quote.number
 %h3
-  %b Client Email:
-%p{:style => "font-size:14px"}= @quote.email
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Email Address:
+  %span
+    %strong= @quote.email
 %h3
-  %b Property Address:
-%p{:style => "font-size:14px"}= @quote.address
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Client's Property Address:
+  %span
+    %strong= @quote.address
 %h3
-  %b City:
-%p{:style => "font-size:14px"}= @quote.city
+  %span{style: "font-weight: 500; font-size: 14px"}
+    City:
+  %span
+    %strong= @quote.city
 %h3
-  %b Postal Code:
-%p{:style => "font-size:14px"}= @quote.postal
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Postal Code:
+  %span
+    %strong= @quote.postal
 %h3
-  %b Service Area:
-%p{:style => "font-size:14px"}= @quote.servicearea
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Area Insulation Needed:
+  %span
+    %strong= @quote.servicearea
 %h3
-  %b Approximate Sqft:
-%p{:style => "font-size:14px"}= @quote.sqft
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Approximate Sqft:
+  %span
+    %strong= @quote.sqft
 %h3
-  %b Description:
-%p{:style => "font-size:14px"}= @quote.description
+  %span{style: "font-weight: 500; font-size: 14px"}
+    Project Description:
+  %span
+    %strong= @quote.description
