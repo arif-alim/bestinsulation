@@ -1,6 +1,5 @@
 :css
   .blog-post h4 {font-weight: 700;}
-  .blog-post p {font-weight: 600; font-size: 14px; color: #666;}
   .blog-post ul li {color: #999; font-size: 13px; font-weight: 600;}
 / Page Title START
 .page-title.jarallax.black-overlay-30{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('/img/about/banner.jpg');"}
@@ -13,9 +12,6 @@
         = link_to "Blog", blog_about_index_path
       %li
         We Just Launched Our New Website
-
-
-
 / Blog Post START
 .section-block.pb-0
   .container
@@ -23,11 +19,11 @@
       .col-md-10.col-sm-12.col-12.offset-md-1
         .blog-post.text-center
           %img.mb-15{:alt => "Website", :src => "/img/blog/website-post.jpg"}/
-          %h4
+          %h4.pt-30
             We Just Launched Our New Website
           %ul.blog-post-info
             %li
               %i.far.fa-calendar-alt
               %span August 31st, 2018
-          %p
+          %p.pb-30
             We have been deligently working on providing our clients with a new dynamic website with an appealing interface yet informative. We focused on user experience, and our designer and developer made sure that the design provided users to navigate from page to page easily without. We are super excited to showcase our new video on our new website.

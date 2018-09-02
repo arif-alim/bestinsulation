@@ -1,7 +1,7 @@
 :css
   .blog-grid-text h4 {font-weight: 700}
-  .blog-grid-text p {font-weight: 600; font-size: 14px; color: #666}
-  .blog-grid-text ul li {color: #999; font-size: 13px; font-weight: 600}
+  .blog-grid-text p {font-weight: 500; font-size: 14px; color: #555}
+  .blog-grid-text ul li {color: #999; font-size: 13px}
 / Page Title START
 .page-title.jarallax.black-overlay-30{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('/img/about/banner.jpg');"}
   .container
@@ -23,7 +23,7 @@
                 %img{:alt => "Website front page", :src => "/img/blog/website.jpg"}/
               .blog-grid-text
                 %h4
-                  We Just Launched Our New Website
+                  = link_to "We Just Launched Our New Website", new_website_blog_index_path
                 %ul
                   %li
                     %i.fa.fa-calendar>
@@ -40,7 +40,7 @@
                 %img{:alt => "Best Insulation Video Image", :src => "/img/blog/video.jpg"}/
               .blog-grid-text
                 %h4
-                  Best Insulation Promo Video
+                  = link_to "Best Insulation Promo Video", best_insulation_video_blog_index_path
                 %ul
                   %li
                     %i.fa.fa-calendar>
