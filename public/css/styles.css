@@ -1064,8 +1064,8 @@ a) Text-content
 .text-content-small p{
 	font-size: 14px !important;
 	font-weight: 600;
-	color: #555;
-	line-height: 190%;
+	color: #222;
+	line-height: 1.6;
 	margin-bottom: 15px;
 }
 
@@ -1075,9 +1075,9 @@ a) Text-content
 
 .text-content p{
 	font-size: 14px;
-	font-weight: 500;
-	color: #000;
-	line-height: 1.7;
+	font-weight: 600;
+	color: #222;
+	line-height: 1.6;
 	margin-bottom: 15px;
 }
 
@@ -1087,9 +1087,9 @@ a) Text-content
 
 .text-content-big p{
 	font-size: 15px;
-	font-weight: 500;
-	color: #999;
-	line-height: 190%;
+	font-weight: 600;
+	color: #222;
+	line-height: 1.6;
 	margin-bottom: 15px;
 }
 
@@ -14207,8 +14207,13 @@ padding-left: 10px;
 } */
 
 
-.gritter-notice-wrapper {
-  top: 200px !important;
-  background-color: yellow;
-  color:black;
+/* Ceiling Page CSS */
+.subheading {
+  font-size: 14px;
+  color: #E8CF49;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.primary-list li {
+  margin-top: 8px;
 }
