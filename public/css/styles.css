@@ -99,6 +99,41 @@ TABLE OF CONTENT
 	padding: 90px 0px 90px 0px;
 	background-color: #fafafa;
 }
+
+.section-custom{
+	position: relative;
+	padding: 40px 0px 40px 0px;
+}
+
+@media (max-width: 767px) {
+	.section-custom{
+		padding: 30px 0px 20px 0px;
+	}
+}
+
+.section-callback{
+	position: relative;
+	padding: 0px 0px 10px 0px;
+}
+
+@media (max-width: 767px) {
+	.section-callback{
+		padding: 20px 0px 20px 0px;
+	}
+}
+
+.section-custom-grey{
+	position: relative;
+	padding: 40px 0px 40px 0px;
+	background-color: #fafafa;
+}
+
+@media (max-width: 767px) {
+	.section-custom-grey{
+		padding: 40px 0px 40px 0px;
+	}
+}
+
 @media (max-width: 767px) {
 	.section-block-grey{
 		padding: 60px 0px 60px 0px;
@@ -202,7 +237,7 @@ TABLE OF CONTENT
 	padding: 90px 0px 90px 0px;
 }
 .section-sm{
-	padding: 60px 0px 60px 0px;
+	padding: 50px 0px 40px 0px;
 }
 .section-xs{
 	padding: 30px 0px 30px 0px;
@@ -272,7 +307,7 @@ TABLE OF CONTENT
 -------------------------------------------*/
 .section-heading{
 	position: relative;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 }
 
 .section-heading h2 strong,
@@ -296,7 +331,7 @@ TABLE OF CONTENT
 	position: relative;
 	font-size: 36px;
 	font-weight: 600;
-	color: #222;
+	color: #000;
 	line-height: 130%;
 	letter-spacing: -2px;
 	word-spacing: 2px;
@@ -318,7 +353,6 @@ TABLE OF CONTENT
 	letter-spacing: -2px;
 	word-spacing: 2px;
 	margin-bottom: 10px;
-	margin-top: 5px;
 }
 @media (max-width: 767px) {
 	.section-heading h3{
@@ -359,33 +393,32 @@ TABLE OF CONTENT
 		font-size: 23px;
 	}
 }
+
 .section-heading h6{
 	position: relative;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 600;
 	color: #222;
-	line-height: 130%;
-	letter-spacing: -1px;
+	line-height: 1.6;
+	letter-spacing: -0.5px;
 	word-spacing: 1px;
-	margin-bottom: 10px;
-	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .section-heading p{
-	font-size: 14px;
-	font-weight: 500;
-	color: #000;
-	line-height: 1.7;
-	padding-top: 15px;
-	margin-bottom: 0px;
+  font-size: 15px !important;
+	font-weight: 600;
+	color: #333;
+	line-height: 1.55;
+
 }
 
 .section-heading small{
 	font-size: 13px;
 	font-weight: 700;
-	color: #E8CF49;
-	line-height: 250%;
+	color: #B2B2B2;
+	line-height: 1.7;
 	text-transform: uppercase;
-	padding-bottom: 5px;
+	/* padding-bottom: 5px; */
 }
 
 
@@ -1064,7 +1097,31 @@ a) Text-content
 .text-content-small p{
 	font-size: 14px !important;
 	font-weight: 600;
-	color: #222;
+	color: #333;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.text-content-insulation{
+	position: relative;
+}
+
+.text-content-insulation p{
+	font-size: 14px !important;
+	font-weight: 600;
+	color: #333;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.text-customer-promise{
+	position: relative;
+}
+
+.text-customer-promise p{
+	font-size: 14px;
+	font-weight: 500;
+	color: #444;
 	line-height: 1.6;
 	margin-bottom: 15px;
 }
@@ -1075,11 +1132,12 @@ a) Text-content
 
 .text-content p{
 	font-size: 14px;
-	font-weight: 600;
-	color: #222;
+	font-weight: 500;
+	color: #000;
 	line-height: 1.6;
 	margin-bottom: 15px;
 }
+
 
 .text-content-big{
 	position: relative;
@@ -1519,6 +1577,21 @@ e) Color Control
 .primary-color span{
 	color: #E8CF49 !important;
 }
+
+.insulation-color,
+.insulation-color h1,
+.insulation-color h2,
+.insulation-color h3,
+.insulation-color h4,
+.insulation-color h5,
+.insulation-color h6,
+.insulation-color p,
+.insulation-color i,
+.insulation-color strong,
+.insulation-color span{
+	color: #CFB52A !important;
+}
+
 .dark-color,
 .dark-color h1,
 .dark-color h2,
@@ -5464,12 +5537,13 @@ Style 2
 }
 
 .blog-grid-text p{
-    color: #999;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.7;
+    color: #888;
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 1.6;
     border-bottom: 1px solid #ececec;
     padding-bottom: 15px;
+
 }
 
 .blog-grid-2-button a {
@@ -8911,7 +8985,14 @@ Style 1
 -----------------*/
 .shop-tabs .tabs{
 	position: relative;
+  margin-top: 24px;
 }
+
+/* @media (max-width: 767px) {
+  .shop-tabs .tabs {
+    margin-top: 24px;
+  }
+} */
 
 .shop-tabs .tabs .tab-menu li {
 	background: #f9f9f9;
@@ -13997,7 +14078,7 @@ Style 4
 .mt-0 {
   margin-top: 0px;
 }
-.mt-5 {
+.mt-5t {
   margin-top: 5px;
 }
 .mt-10 {
@@ -14034,8 +14115,8 @@ Style 4
 .mb-0 {
   margin-bottom: 0px;
 }
-.mb-5 {
-  margin-bottom:  5px;
+.mb-5b {
+  margin-bottom: 5px;
 }
 .mb-10 {
   margin-bottom: 10px;
@@ -14216,4 +14297,133 @@ padding-left: 10px;
 }
 .primary-list li {
   margin-top: 8px;
+}
+
+
+/* Services Text */
+.services-text{
+    padding: 20px 25px 25px 25px;
+}
+
+.services-text span{
+    color: #E8CF49;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.services-text h4{
+    color: #222;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.services-text h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.services-text ul li{
+    display: inline-block;
+    color: #999;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 10px 25px 10px 0px;
+}
+
+.services-text ul li i{
+    color: #E8CF49;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.services-text p{
+    color: #888;
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 1.6;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 15px;
+}
+
+.services-2-button a {
+    display: inline-block;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0px 0px 5px;
+}
+
+.services-2-button a i {
+    font-size: 11px;
+    margin-left: 4px;
+}
+
+.services-2-button a:hover{
+	color: #E8CF49;
+}
+/* Home Page CSS */
+.video-image {
+  background-image: url('/img/home/video-background.jpg');
+  object-fit: cover;
+}
+/* Revies Page CSS */
+.reviews ul li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+.reviews ul li a:hover {
+  color: #333;
+}
+
+
+/* .blog-grid-text h4 {font-weight: 700}
+.blog-grid-text p {font-weight: 500; font-size: 14px; color: #555}
+.blog-grid-text ul li {color: #999; font-size: 13px} */
+
+
+/* Service Map */
+
+.mapheading {
+  position:absolute;
+  width: 330px;
+  height: 600px;
+}
+.mapheading .container {
+  position: relative;
+  background-color: rgba(33, 33, 33, 0.6);
+  padding: 30px 30px;
+  height: 100%;
+}
+.mapheading .container h4 {
+  color:white;
+  font-size: 24px;
+}
+.mapheading .container h4 span {
+  font-size: 18px;
+}
+.mapheading .container p {
+  color:white;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.mapheading .container a {
+  color:white;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.mapheading .container .call a {
+  color:black;
+}
+.mapheading .container .call a:hover {
+  color:white;
+}
+.mapheading .container a .primary-button {
+  color:black;
+}
+.map {
+  height: 100%;
 }

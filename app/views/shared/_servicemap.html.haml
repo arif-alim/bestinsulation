@@ -1,63 +1,20 @@
-:css
-  
-  .mapheading {
-    position:absolute;
-    width: 330px;
-    height: 600px;
-  }
-  .mapheading .container {
-    position: relative;
-    background-color: rgba(33, 33, 33, 0.6);
-    padding: 30px 30px;
-    height: 100%;
-  }
-  .mapheading .container h4 {
-    color:white;
-    font-size: 24px;
-  }
-  .mapheading .container h4 span {
-    font-size: 18px;
-  }
-  .mapheading .container p {
-    color:white;
-    font-size: 13px;
-    line-height: 1.6;
-  }
-  .mapheading .container a {
-    color:white;
-    font-size: 13px;
-    line-height: 1.6;
-  }
-  .mapheading .container .call a {
-    color:black;
-  }
-  .mapheading .container .call a:hover {
-    color:white;
-  }
-  .mapheading .container a .primary-button {
-    color:black;
-  }
-  .map {
-    height: 100%;
-  }
-
 / Team Section START
 .section.section-sm.pt-30.pb-30
   .container
     .col-md-10.col-sm-12.col-12.offset-md-1
       .section-heading.center-holder
-        %h2.bold.mb-0
+        %h2.bold
           Proudly Serving
           %span.primary-color
             The Greater Toronto Area
           -# .section-heading-line
         %p
-          Our expert team never rests on our accomplishments. We didn’t get to where we are by being one of the crowd. Our team believes in innovation, and an expertly insulated home can drastically reduce your monthly energy bills and consumption, but also add the value of your home investment, and is also an excellent ethical choice that is great for the environment. Why wait? give us a call!
-        .mt-15
-          %a.primary-button.button-sm{:href => "#"} Call Us +1(647) 829-9797
-          %button.primary-button.button-sm{"data-izimodal-open" => "#modal5"}
+          Our expert team never rests on our accomplishments. We didn’t get to where we are by being one of the crowd. Our team believes in innovation, and an expertly insulated home can drastically reduce your monthly energy bills and consumption, but also add the value of your home investment. Why wait? give us a call!
+        .mt-20.mb-40
+          %a.dark-button.button-sm{:href => "#"} Call Us +1(647) 829-9797
+          %button.dark-button.button-sm{"data-izimodal-open" => "#modal5"}
             Request A Quote
-          %a.primary-button.button-sm{:href => "#"} Contact Us
+          %a.dark-button.button-sm{:href => "#"} Contact Us
   .div.mt-30
     .container
       .mapheading
