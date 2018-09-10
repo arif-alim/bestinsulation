@@ -383,7 +383,7 @@ TABLE OF CONTENT
 	font-weight: 400;
 	color: #222;
 	line-height: 130%;
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 	word-spacing: 2px;
 	margin-bottom: 10px;
 	margin-top: 5px;
@@ -1119,8 +1119,20 @@ a) Text-content
 }
 
 .text-customer-promise p{
-	font-size: 14px;
-	font-weight: 500;
+	font-size: 14.5px;
+	font-weight: 600;
+	color: #444;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.text-sustainability{
+	position: relative;
+}
+
+.text-sustainability p{
+  font-size: 14.5px;
+	font-weight: 600;
 	color: #444;
 	line-height: 1.6;
 	margin-bottom: 15px;
@@ -10939,7 +10951,7 @@ Shop Product Review Form
 
 
 .card-body-grey p{
-	font-size: 13.5px;
+	font-size: 14px;
 	font-weight: 600;
 	color: #555;
 	line-height: 1.7;
@@ -14052,6 +14064,10 @@ Style 4
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.ptb-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .ptb-20 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -14426,4 +14442,11 @@ padding-left: 10px;
 }
 .map {
   height: 100%;
+}
+
+
+/* Sustainability */
+
+.bg-grey {
+  background-color: #fafafa;
 }
