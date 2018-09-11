@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :gallery, only: :index
+  resources :rebates, only: :index
   resources :reviews, only: :index
   resources :contacts, only: :create
   resources :call_backs, only: :create
