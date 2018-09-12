@@ -408,6 +408,14 @@
 / Main JS
 %script{:src => "/js/main.js"}
 
+/ Global site tag (gtag.js) - Google Analytics
+%script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-122493076-2"}
+:javascript
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122493076-2');
 / Start of Zendesk Chat Script
 :javascript
   window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
