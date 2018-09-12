@@ -97,7 +97,8 @@
         .mt-20
           %p
             Best Insulation offers free consultations to help clients decide which insulation product is the best solution. We are capable of servicing the smallest local contracts to the largest residential jobs throughout the Greater Toronto Area. Best Insulation is a family run company that prides itself on high knowledge on its products and craftsmanship. A owner is always on site during installation and we are available to you 24/7.
-          %a.small-text.white-color{:href => "#"} More About us
+          %a
+            = link_to "More About Us", about_index_path, class: "small-text white-color"
 
       / Column 3 Start
       .col-md-3.col-sm-6.col-12.center-holder-xs.mt-30
@@ -126,8 +127,8 @@
                       %i.fas.fa-star
                   %p.pr-15.pl-15
                     "I had my whole house insulated by Best Insulation in addition to dry wall, plaster and paint. They take care of everythin..."
-                  %a.pr-15.pl-15{:href => "reviews"}
-                    View All Reviews
+                  %a.pr-15.pl-15
+                    = link_to "View All Reviews", reviews_path
 
       / Column 3 End
       / Column 3 Start
@@ -226,7 +227,8 @@
         .mt-20
           %p.mb-0
             Best Insulation offers free consultations to help clients decide which insulation product is the best solution. We are capable of servicing the smallest local contracts to the largest residential jobs throughout the Greater Toronto Area. Best Insulation is a family run company that prides itself on high knowledge on its products and craftsmanship. A owner is always on site during installation and we are available to you 24/7.
-          %a.small-text.white-color{:href => "#"} More About us
+          %a
+            = link_to "More About Us", about_index_path, class: "small-text white-color"
       / Column 1 End
       / Column 2 Start
       .col-md-4.col-sm-6.col-12.center-holder-xs
@@ -300,8 +302,8 @@
                       %i.fas.fa-star
                   %p.pr-15.pl-15
                     "I had my whole house insulated by Best Insulation in addition to dry wall, plaster and paint. They take care of everythin..."
-                  %a.pr-15.pl-15{:href => "reviews"}
-                    View All Reviews
+                  %a.pr-15.pl-15
+                    = link_to "View All Reviews", reviews_path
       / Column 3 End
       / Column 3 Start
       .col-md-2.col-sm-6.col-12
