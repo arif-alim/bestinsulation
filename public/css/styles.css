@@ -14234,6 +14234,9 @@ padding-left: 10px;
   padding-right: 50px;
 }
 
+.mr-2 {
+  margin-right: 2px;
+}
 .mr-5 {
   margin-right: 5px;
 }
@@ -14263,6 +14266,9 @@ padding-left: 10px;
 }
 .mr-50 {
   margin-right: 50px;
+}
+.ml-2 {
+  margin-left: 2px;
 }
 .ml-5 {
   margin-left: 5px;
