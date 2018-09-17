@@ -49,5 +49,6 @@ Rails.application.routes.draw do
     end
   end
   root to: 'home#index'
+  get 'sitemap.xml', :to => 'sitemap#index', :defaults => {:format => 'xml'}
   # get '/:page' => 'home#index'
 end
