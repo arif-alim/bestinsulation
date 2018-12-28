@@ -28,43 +28,43 @@
             The team at Best Insulation is ready to take on any project. No project is too small or too big for us!
 
 
-      .col-md-3.col-sm-12.col-12.mt-30
-        .contact-box-place-office
-          %h4
-            ALI MOGHEI
-          %h6
-            Business Developer
-          .section-heading.left-holder.mt-20
-            %ul
-              %li
-                %i.fas.fa-phone
-                %a{:href => "tel:1-647-829-9797"}
-                  +1(647) 829-9797
-              %li
-                %i.fas.fa-envelope-open
-                %a{:href => "mailto:ali@bestinsulation.ca?Subject=Website-%20Services%20Inquiry", :target => "_top"}
-                  ali@bestinsulation.ca
-              %li
-                %i.fas.fa-globe
-                %a{:href => "http://www.bestinsulation.ca/"}
-                  www.bestinsulation.ca
-              %li{:style => "font-weight:500"}
-                %i.fas.fa-building
-                9040 Leslie St #201
-                %br
-                %span.pl-30
-                Richmond Hill, ON
-                %br
-                %span.pl-30
-                L4B 3L8 Canada
-      .col-md-3.col-sm-12.col-12.mt-30
-        .contact-box-place-office
+      -# .col-md-3.col-sm-12.col-12.mt-30
+      -#   .contact-box-place-office
+      -#     %h4
+      -#       ALI MOGHEI
+      -#     %h6
+      -#       Business Developer
+      -#     .section-heading.left-holder.mt-20
+      -#       %ul
+      -#         %li
+      -#           %i.fas.fa-phone
+      -#           %a{:href => "tel:1-647-829-9797"}
+      -#             +1(647) 829-9797
+      -#         %li
+      -#           %i.fas.fa-envelope-open
+      -#           %a{:href => "mailto:ali@bestinsulation.ca?Subject=Website-%20Services%20Inquiry", :target => "_top"}
+      -#             ali@bestinsulation.ca
+      -#         %li
+      -#           %i.fas.fa-globe
+      -#           %a{:href => "http://www.bestinsulation.ca/"}
+      -#             www.bestinsulation.ca
+      -#         %li{:style => "font-weight:500"}
+      -#           %i.fas.fa-building
+      -#           9040 Leslie St #201
+      -#           %br
+      -#           %span.pl-30
+      -#           Richmond Hill, ON
+      -#           %br
+      -#           %span.pl-30
+      -#           L4B 3L8 Canada
+      .col-md-4.col-sm-12.col-12.mt-30
+        .contact-box-place-office.text-center
           %h4
             MO SHAHRI
           %h6
             Project Manager
           .section-heading.left-holder.mt-20
-            %ul
+            %ul.text-center
               %li
                 %i.fas.fa-phone
                 %a{:href => "tel:1-416-319-1212"}
@@ -87,7 +87,7 @@
                 %span.pl-30
                 L4B 3L8 Canada
 
-      .col-md-6.col-sm-12.col-12
+      .col-md-8.col-sm-12.col-12
         -# = render 'shared/flash'
         #contactusmessage
         = simple_form_for @contact, :html => {:class => 'primary-form mt-30', remote: true } do |f|
