@@ -37,11 +37,35 @@ Rails.application.routes.draw do
   resources :services, only: [:index] do
     collection do
       get :spray_foam_insulation
+      get :insulation
+      get :mudding
+      get :drywall
+      get :painting
+    end
+  end
+  resources :insulation, only: [:index] do
+    collection do
+      get :spray_foam_insulation
       get :ceiling_and_attic_insulation
       get :walls_insulation
       get :basement_insulation
     end
   end
+  resources :painting, only: [:index] do
+    collection do
+      get :interior
+      get :exterior
+      get :staining
+    end
+  end
+  resources :drywall, only: [:index] do
+    collection do
+      get :installation
+      get :soundproofing
+      get :taping
+    end
+  end
+
   resources :blog, only: [:index] do
     collection do
       get :best_insulation_video

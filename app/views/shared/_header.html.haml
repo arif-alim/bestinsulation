@@ -51,16 +51,10 @@
           %ul.nav-dropdown
             %li
               = link_to "Why Spray Foam?", why_spray_foam_spray_foam_index_path
-            -# %li
-            -#   = link_to "Health & Safety", health_and_safety_spray_foam_index_path
             %li
               = link_to "Moisture Control", moisture_control_spray_foam_index_path
             %li
               = link_to "Energuide Ratings", energuide_ratings_spray_foam_index_path
-            -# %li
-            -#   = link_to "Open or Closed Cell", open_or_closed_cell_spray_foam_index_path
-            -# %li
-            -#   = link_to "Home Insulation Guide", home_insulation_guide_spray_foam_index_path
             %li
               = link_to "Spray Foam vs Traditional", spray_foam_vs_traditional_spray_foam_index_path
             %li
@@ -70,42 +64,50 @@
           %ul.nav-dropdown
             %li
               = link_to "Why Spray Foam?", why_spray_foam_spray_foam_index_path
-            -# %li
-            -#   = link_to "Health & Safety", health_and_safety_spray_foam_index_path
             %li
               = link_to "Moisture Control", moisture_control_spray_foam_index_path
             %li
               = link_to "Energuide Ratings", energuide_ratings_spray_foam_index_path
-            -# %li
-            -#   = link_to "Open or Closed Cell", open_or_closed_cell_spray_foam_index_path
-            -# %li
-            -#   = link_to "Home Insulation Guide", home_insulation_guide_spray_foam_index_path
             %li
               = link_to "Spray Foam vs Traditional", spray_foam_vs_traditional_spray_foam_index_path
             %li
               = link_to "Energy Efficiency & Savings", energy_efficiency_and_savings_spray_foam_index_path
-        %li.hidden-sm-up
+        %li.hidden-sm-down
           = link_to "Services", "javascript:void(0);"
           %ul.nav-dropdown
             %li
-              = link_to "Spray Foam Insulation", spray_foam_insulation_services_path
+              = link_to "Insulation", insulation_services_path
+              %ul.nav-dropdown
+                %li
+                  = link_to "Spray Foam Insulation", spray_foam_insulation_insulation_index_path
+                %li
+                  = link_to "Ceiling & Attic Insulation", ceiling_and_attic_insulation_insulation_index_path
+                %li
+                  = link_to "Walls Insulation", walls_insulation_insulation_index_path
+                %li
+                  = link_to "Basement Insulation", basement_insulation_insulation_index_path
             %li
-              = link_to "Ceiling & Attic Insulation", ceiling_and_attic_insulation_services_path
+              = link_to "Drywall", drywall_services_path
+              %ul.nav-dropdown
+                %li
+                  = link_to "Installation", installation_drywall_index_path
+                %li
+                  = link_to "Soundproofing", soundproofing_drywall_index_path
+                %li
+                  = link_to "Taping", taping_drywall_index_path
             %li
-              = link_to "Walls Insulation", walls_insulation_services_path
+              = link_to "Painting", painting_services_path
+              %ul.nav-dropdown
+                %li
+                  = link_to "Interior", interior_painting_index_path
+                %li
+                  = link_to "Exterior", exterior_painting_index_path
+                %li
+                  = link_to "Staining", staining_painting_index_path
             %li
-              = link_to "Basement Insulation", basement_insulation_services_path
-        %li.hidden-sm-down
-          = link_to "Services", services_path
-          %ul.nav-dropdown
-            %li
-              = link_to "Spray Foam Insulation", spray_foam_insulation_services_path
-            %li
-              = link_to "Ceiling & Attic Insulation", ceiling_and_attic_insulation_services_path
-            %li
-              = link_to "Walls Insulation", walls_insulation_services_path
-            %li
-              = link_to "Basement Insulation", basement_insulation_services_path
+              = link_to "Mudding", mudding_services_path
+        
+              
         %li
           = link_to "Reviews", reviews_path
         %li
@@ -115,3 +117,6 @@
         %li
           %button.dark-button.button-xs{"data-izimodal-open" => "#modal5", :style => "text-transform: uppercase; font-weight: 900; font-size: 12px; margin-left:15px"}
             Request A Quote
+
+
+

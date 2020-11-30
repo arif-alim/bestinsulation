@@ -1,18 +1,12 @@
 class ServicesController < ApplicationController
-
   def index
   end
-
-  def spray_foam_insulation
+  def insulation
   end
-
-  def ceiling_and_attic_insulation
+  def drywall
   end
-
-  def basement_insulation
+  def painting
   end
-
-  def walls_insulation
+  def mudding
   end
-
 end

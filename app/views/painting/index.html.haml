@@ -1,0 +1,12 @@
+/ Page Title START
+.page-title.jarallax.black-overlay-30{"data-jarallax" => "", "data-speed" => "0.6", :style => "background-image: url('/img/about/banner.jpg');"}
+  .container
+    %h1 Who are we?
+    %ul
+      %li
+        = link_to "Home", home_index_path
+      %li
+        Services
+
+-#  Bottega Construction Services
+= render 'shared/services'
