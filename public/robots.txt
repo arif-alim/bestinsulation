@@ -4,4 +4,4 @@
 # User-agent: *
 # Disallow: /
 
-Sitemap: http://www.bestinsulation.ca/sitemap.xml
+Sitemap: https://www.bottegaconstruction.com/sitemap.xml
