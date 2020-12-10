@@ -41,6 +41,17 @@
 %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900", :rel => "stylesheet"}/
 / Jquery
 %script{:src => "/js/jquery.min.js"}
+
+/ Global site tag (gtag.js) - Google Analytics
+%script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-122493076-2"}
+:javascript
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122493076-2');
+
+
 = csrf_meta_tags
 = csp_meta_tag
 = stylesheet_link_tag "application"
