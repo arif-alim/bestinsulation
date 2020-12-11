@@ -18,7 +18,7 @@ module WebBi
     ActionMailer::Base.smtp_settings = {
       :user_name => 'best_insulation',
       :password => 'BIAliMo2018',
-      :domain => 'www.bestinsulation.ca',
+      :domain => 'www.bottegaconstruction.com',
       :address => 'smtp.sendgrid.net',
       :port => 587,
       :authentication => :plain,
